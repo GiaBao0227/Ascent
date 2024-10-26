@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    /*ngoài*/
+    padding: 0;
+    /*trong*/
+    font-size: 17px;
+    font-family: Nunito;
+    font-weight: bolder;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infor ul li {
+    display: inline;
+    margin-left: 30px;
+    color: white;
+
+}
+
+.contact ul li {
+    display: inline;
+    margin-left: 15px;
+    color: white;
+
+    border: 10px;
+
+}
+
+/* .contact {
+    font-size: 10px;
+    align-items: center;
+    border-bottom-color: rgb(229, 231, 235);
+    border-bottom-style: solid;
+    border-left-color: rgb(229, 231, 235);
+    border-left-style: solid;
+    border-right-color: rgb(229, 231, 235);
+    border-right-style: solid;
+    border-top-color: rgb(229, 231, 235);
+    border-top-style: solid;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    column-gap: 14px;
+    display: flex;
+    font-family: Nunito;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    height: 23.9931px;
+    line-height: 25.6px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    row-gap: 14px;
+    tab-size: 4;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 137.951px;
+
+} */
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.contact ul li:hover {
+    background-color: #F7941E;
+    border-radius: 10px;
+}
+
+.social {
+    margin-left: 60px;
+}
+
+#top-header {
+    background-color: #ED145B;
+}
+
+ul.hmenu>li>a:hover {
+    color: #F9A11E;
+    font-weight: bolder;
+}
+
+ul.hmenu>li {
+    float: left;
+    margin: 0 5px;
+    position: relative;
+}
+
+ul.hmenu>li:hover>.sub-menu {
+    display: block;
+    background-color: ivory;
+}
+
+ul.sub-menu {
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    display: none;
+}
+
+.sub-menu>li>a {
+    display: block;
+    line-height: 20px;
+    /* border-bottom: 1px dotted orangered; */
+    text-decoration: none;
+    /* font-variant: small-caps; */
+    /* padding-left: 45px; */
+    font-weight: bolder;
+    color: black;
+    background-color: ivory;
+    width: 200px;
+}
+
+.sub-menu>li>a:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #F7941E;
+}
+
+.btnQuote {
+    background-color: #1BB6AF;
+    width: 150px;
+    height: 50px;
+    color: white;
+
+    justify-content: center;
+}
+
+.btnQuote:hover {
+    background-color: #73BE48;
+    transition: all 0.5s;
+}
