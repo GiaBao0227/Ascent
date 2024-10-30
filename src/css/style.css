@@ -164,19 +164,24 @@ ul.sub-menu {
     font-weight: 300;
 }
 
-.txtStarting{
+.txtStarting {
     color: #7B7978;
 }
 
 #exploring {
     background-color: #FFF0E5;
 }
+
 @keyframes upDown {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
-        transform: translateY(-10px); /* Điều chỉnh độ cao của chuyển động */
+        transform: translateY(-10px);
+        /* Điều chỉnh độ cao của chuyển động */
     }
 }
 
@@ -185,14 +190,142 @@ ul.sub-menu {
 }
 
 @keyframes leftRight {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(0);
     }
+
     50% {
-        transform: translateX(20px); /* Điều chỉnh khoảng cách di chuyển */
+        transform: translateX(20px);
+        /* Điều chỉnh khoảng cách di chuyển */
     }
 }
 
 .animate-left-right-2 {
     animation: leftRight 3s ease-in-out infinite;
+}
+
+#invest {
+    margin-left: 15px;
+}
+
+.txtTalks{
+    color: #F7941E; 
+}
+.txtLorem{
+    color: #777777;
+}
+.btnQuote__invest {
+    background: linear-gradient(90deg, #1BB6AF 50%, #FFFFFF 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 15px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateY(5px);
+}
+
+.btnQuote__invest:hover {
+    background-position: left;
+    color: white;
+    /* Di chuyển nền sang trái khi hover */
+}
+
+.icon__wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__wrapper::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px); /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #F7941E;; /* Màu viền vòng tròn */
+    background-color: #F7941E;
+    border-radius: 50%;
+    z-index: -1; /* Để vòng tròn ở phía sau icon */
+}
+
+.icon__wrapper1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__wrapper1::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px); /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #ED145B; /* Màu viền vòng tròn */
+    background-color: #ED145B;
+    border-radius: 50%;
+    z-index: -1; /* Để vòng tròn ở phía sau icon */
+}
+
+.icon__wrapper2 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__wrapper2::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px); /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #73BE48; /* Màu viền vòng tròn */
+    background-color: #73BE48;
+    border-radius: 50%;
+    z-index: -1; /* Để vòng tròn ở phía sau icon */
+}
+
+.icon__wrapper3 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__wrapper3::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px); /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #1CBBB4; /* Màu viền vòng tròn */
+    background-color: #1CBBB4;
+    border-radius: 50%;
+    z-index: -1; /* Để vòng tròn ở phía sau icon */
 }
