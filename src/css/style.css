@@ -202,6 +202,23 @@ ul.sub-menu {
     }
 }
 
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+
+    }
+
+}
+
+.animate-left-right {
+    animation: moveLeftRight 3s ease-in-out infinite;
+}
+
+
 .animate-left-right-2 {
     animation: leftRight 3s ease-in-out infinite;
 }
@@ -210,12 +227,14 @@ ul.sub-menu {
     margin-left: 15px;
 }
 
-.txtTalks{
-    color: #F7941E; 
+.txtTalks {
+    color: #F7941E;
 }
-.txtLorem{
+
+.txtLorem {
     color: #777777;
 }
+
 .btnQuote__invest {
     background: linear-gradient(90deg, #1BB6AF 50%, #FFFFFF 50%);
     /* Đặt màu nền cơ bản */
@@ -223,7 +242,7 @@ ul.sub-menu {
     /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
     background-position: right;
     /* Bắt đầu từ bên phải */
-    padding: 15px 20px;
+    padding: 20px 35px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -254,14 +273,19 @@ ul.sub-menu {
 .icon__wrapper::before {
     content: "";
     position: absolute;
-    top: -5px; /* Điều chỉnh khoảng cách so với icon */
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
     left: -5px;
-    width: calc(100% + 10px); /* Đường kính vòng tròn bên ngoài */
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
     height: calc(100% + 10px);
-    border: 2px solid #F7941E;; /* Màu viền vòng tròn */
+    border: 2px solid #F7941E;
+    ;
+    /* Màu viền vòng tròn */
     background-color: #F7941E;
     border-radius: 50%;
-    z-index: -1; /* Để vòng tròn ở phía sau icon */
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
 }
 
 .icon__wrapper1 {
@@ -276,14 +300,18 @@ ul.sub-menu {
 .icon__wrapper1::before {
     content: "";
     position: absolute;
-    top: -5px; /* Điều chỉnh khoảng cách so với icon */
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
     left: -5px;
-    width: calc(100% + 10px); /* Đường kính vòng tròn bên ngoài */
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
     height: calc(100% + 10px);
-    border: 2px solid #ED145B; /* Màu viền vòng tròn */
+    border: 2px solid #ED145B;
+    /* Màu viền vòng tròn */
     background-color: #ED145B;
     border-radius: 50%;
-    z-index: -1; /* Để vòng tròn ở phía sau icon */
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
 }
 
 .icon__wrapper2 {
@@ -298,14 +326,18 @@ ul.sub-menu {
 .icon__wrapper2::before {
     content: "";
     position: absolute;
-    top: -5px; /* Điều chỉnh khoảng cách so với icon */
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
     left: -5px;
-    width: calc(100% + 10px); /* Đường kính vòng tròn bên ngoài */
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
     height: calc(100% + 10px);
-    border: 2px solid #73BE48; /* Màu viền vòng tròn */
+    border: 2px solid #73BE48;
+    /* Màu viền vòng tròn */
     background-color: #73BE48;
     border-radius: 50%;
-    z-index: -1; /* Để vòng tròn ở phía sau icon */
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
 }
 
 .icon__wrapper3 {
@@ -320,12 +352,103 @@ ul.sub-menu {
 .icon__wrapper3::before {
     content: "";
     position: absolute;
-    top: -5px; /* Điều chỉnh khoảng cách so với icon */
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
     left: -5px;
-    width: calc(100% + 10px); /* Đường kính vòng tròn bên ngoài */
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
     height: calc(100% + 10px);
-    border: 2px solid #1CBBB4; /* Màu viền vòng tròn */
+    border: 2px solid #1CBBB4;
+    /* Màu viền vòng tròn */
     background-color: #1CBBB4;
     border-radius: 50%;
-    z-index: -1; /* Để vòng tròn ở phía sau icon */
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
 }
+
+.invest__left .wow {
+    visibility: hidden;
+    /* Đảm bảo rằng các phần tử sẽ chỉ hiện khi được kích hoạt bởi Wow.js */
+}
+
+.txtAcademy {
+    background-color: #FFF0E5;
+
+}
+
+.txtLadder {
+    box-shadow: 0px 4.8px 24.4px rgba(19, 16, 34, 0.1)
+}
+
+.txt10 {
+    color: #1CBBB4 !important;
+    font-weight: bolder !important;
+}
+
+.txtLadder1 {
+    color: #68688B;
+}
+
+.txtAbout {
+    color: #2CBFB9;
+}
+
+/*  */
+#educational {
+    margin-left: 10px;
+}
+
+/* Làm mờ hình ảnh pencil-rocket */
+.image__container {
+    position: relative;
+    display: inline-block;
+}
+
+.main__image {
+    position: relative;
+    z-index: 1;
+}
+
+/* CSS cho phần tử chính */
+.educational_grid {
+    background-color: white;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+
+/* Hiệu ứng hover cho toàn bộ khung */
+.educational_grid:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+}
+
+/* Hiệu ứng hover cho tiêu đề (txtTitle) */
+.educational_grid:hover .txtTitle {
+    color: #73BE48;
+}
+
+/* Hiệu ứng hover cho icon */
+.educational__icon {
+    color: #73BE48;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.educational_grid:hover .educational__icon {
+    background-color: #73BE48;
+    color: #fff;
+}
+
+/* Hiệu ứng hover cho nút Read More */
+.btnReadMore {
+    transition: color 0.5s;
+}
+
+ .btnReadMore:hover {
+    color: #7EC357;
+    cursor: pointer;
+}
+
+.educational__programs{
+    color: #73BE48;
+}
+/*  */

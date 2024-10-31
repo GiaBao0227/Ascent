@@ -1,362 +1,843 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <!-- flowbite -->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-  <!--  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
 
-  <!--  -->
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/output.css" />
-</head>
-
-<body>
-  <header id="header" class="sticky top-0 transition-[top] duration-300 z-40" style="top: -169px">
-    <div id="header__container">
-      <!-- top header start -->
-      <div id="top-header" class="bg-destructive sm:block hidden">
-        <div class="container">
-          <div class="flex lg:flex-row flex-col justify-between items-center gap-2 py-[13px]">
-            <div class="infor">
-              <ul class="flex gap-7.5">
-                <li>
-                  <a href="" class="flex items-start gap-4">
-                    <span><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
-                    <span>(629) 555-0129</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class=" flex items-start gap-4">
-                    <span><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
-                    <span>info@example.com</span>
-                  </a>
-                </li>
-                <li>
-                  <p class=" flex items-start gap-4">
-                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
-                    <span>6391 Elgin St. Celina, 10299</span>
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class="contact">
-              <ul class="social flex items-center">
-                <li>
-                  <a href="" class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"><i
-                      class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href="" class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"><i
-                      class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href="" class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"><i
-                      class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href="" class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"><i
-                      class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
-                </li>
-              </ul>
+  <body>
+    <header
+      id="header"
+      class="sticky top-0 transition-[top] duration-300 z-40"
+      style="top: -169px"
+    >
+      <div id="header__container">
+        <!-- top header start -->
+        <div id="top-header" class="bg-destructive sm:block hidden">
+          <div class="container">
+            <div
+              class="flex lg:flex-row flex-col justify-between items-center gap-2 py-[13px]"
+            >
+              <div class="infor">
+                <ul class="flex gap-7.5">
+                  <li>
+                    <a href="" class="flex items-start gap-4">
+                      <span
+                        ><i class="fa-solid fa-phone" aria-hidden="true"></i
+                      ></span>
+                      <span>(629) 555-0129</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="flex items-start gap-4">
+                      <span
+                        ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+                      ></span>
+                      <span>info@example.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <p class="flex items-start gap-4">
+                      <span
+                        ><i
+                          class="fa-solid fa-location-dot"
+                          aria-hidden="true"
+                        ></i
+                      ></span>
+                      <span>6391 Elgin St. Celina, 10299</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact">
+                <ul class="social flex items-center">
+                  <li>
+                    <a
+                      href=""
+                      class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
+                      ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
+                      ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
+                      ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
+                      ><i
+                        class="fa-brands fa-pinterest-p"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- top header end -->
-      <!-- bottom header -->
-      <div id="bottom__header">
-        <div class="container py-5 [.header-pinned_&]:shadow-md bg-background transition-all duration-300">
-          <div class="brand flex justify-between items-center">
-            <!-- brand -->
-            <div class="brand">
-              <a href="#" class="flex items-center gap-1">
-                <img src="./images/logo.png" />
-                <span class="font-bold text-3xl">Ascent</span>
-              </a>
-            </div>
-            <!-- nav -->
-
-            <div class="flex items-center">
-              <nav class="nav__bar">
-                <ul class="hmenu flex items-center gap-[25px]">
-                  <li class="active leading-[164%] relative py-5 group">
-                    <a class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500 py-5"
-                      href="#">Home
-                      <span class=""><i class="fa-solid fa-angle-down text-sm" aria-hidden="true"></i></span>
-                    </a>
-                    <ul
-                      class="sub-menu absolute top-full z-10 bg-background shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
-                      <li>
-                        <a class="font-semibold font-jost hover:text-cream-foreground hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
-                          href="#">Home-1</a>
-                      </li>
-                      <li>
-                        <a class="font-semibold font-jost hover:text-cream-foreground hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
-                          href="#">Home-2</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="leading-[164%] relative group">
-                    <a href="about.html"
-                      class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500">About
-                      Us</a>
-                  </li>
-                  <li class="leading-[164%] relative py-5 group">
-                    <a href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500">Services
-                      <span class=""><i class="fa-solid fa-angle-down text-sm" aria-hidden="true"></i></span></a>
-
-                    <ul
-                      class="sub-menu absolute top-full z-10 bg-background shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
-                      <li>
-                        <a href="services.html"
-                          class="font-semibold font-jost hover:text-cream-foreground hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Services</a>
-                      </li>
-                      <li>
-                        <a href="service-details.html"
-                          class="font-semibold font-jost hover:text-cream-foreground hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Service
-                          Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="leading-[164%] relative py-5 group">
-                    <a href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500">Blog
-                      <span class=""><i class="fa-solid fa-angle-down text-sm" aria-hidden="true"></i></span></a>
-
-                    <ul
-                      class="sub-menu absolute top-full z-10 bg-background shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
-                      <li>
-                        <a href="blog.html"
-                          class="font-semibold font-jost hover:text-cream-foreground hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Blog</a>
-                      </li>
-                      <li>
-                        <a href="blog-details.html"
-                          class="font-semibold font-jost hover:text-cream-foreground hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Blog
-                          Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="leading-[164%] relative py-5 group">
-                    <a href="#"
-                      class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500">Page
-                      <span class=""><i class="fa-solid fa-angle-down text-sm" aria-hidden="true"></i></span></a>
-
-                    <ul
-                      class="sub-menu absolute top-full z-10 bg-background shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
-                      <li>
-                        <a href="about.html"
-                          class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b">About</a>
-                      </li>
-                      <li>
-                        <a href="services.html"
-                          class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b">Services</a>
-                      </li>
-                      <li>
-                        <a href="service-details.html"
-                          class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b">Service
-                          Details</a>
-                      </li>
-                      <li>
-                        <a href="faq.html"
-                          class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b">Faq</a>
-                      </li>
-                      <li>
-                        <a href="portfolio.html"
-                          class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b">Portfolio</a>
-                      </li>
-                      <li>
-                        <a href="contact.html"
-                          class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b">Contact</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="leading-[164%] relative group">
-                    <a href="contact.html"
-                      class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500">Contact
-                      Us</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="flex items-center gap-5">
-                <div class="ml-16 cursor-pointer search-btn">
-                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                </div>
-                <!-- <p class="h-11 w-[1px] bg-muted xl:block hidden"></p> -->
-                <a href="contact.html" class="btnQuote text-cream-foreground rounded-md sm:flex items-center gap-2.5">
-                  Get A Quote
-                  <span><i class="fa-solid fa-arrow-right"></i></span>
+        <!-- top header end -->
+        <!-- bottom header -->
+        <div id="bottom__header">
+          <div
+            class="container py-5 [.header-pinned_&]:shadow-md bg-background transition-all duration-300"
+          >
+            <div class="brand flex justify-between items-center">
+              <!-- brand -->
+              <div class="brand">
+                <a href="#" class="flex items-center gap-1">
+                  <img src="./images/logo.png" />
+                  <span class="font-bold text-3xl">Ascent</span>
                 </a>
-                <div class="block xl:hidden">
-                  <div class="flex flex-col items-end cursor-pointer transition-all duration-500 offcanvaTragger">
-                    <span class="block h-[3px] w-5 bg-muted"></span>
-                    <span class="block h-[3px] w-7.5 bg-muted mt-2"></span>
-                    <span class="block h-[3px] w-5 bg-muted mt-2"></span>
+              </div>
+              <!-- nav -->
+
+              <div class="flex items-center">
+                <nav class="nav__bar">
+                  <ul class="hmenu flex items-center gap-[25px]">
+                    <li class="active leading-[164%] relative py-5 group">
+                      <a
+                        class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500 py-5"
+                        href="#"
+                        >Home
+                        <span class=""
+                          ><i
+                            class="fa-solid fa-angle-down text-sm"
+                            aria-hidden="true"
+                          ></i
+                        ></span>
+                      </a>
+                      <ul
+                        class="sub-menu absolute top-full z-10 bg-background shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
+                      >
+                        <li>
+                          <a
+                            class="font-semibold font-jost hover hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
+                            href="#"
+                            >Home-1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="font-semibold font-jost hover hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
+                            href="#"
+                            >Home-2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="leading-[164%] relative group">
+                      <a
+                        href="about.html"
+                        class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500"
+                        >About Us</a
+                      >
+                    </li>
+                    <li class="leading-[164%] relative py-5 group">
+                      <a
+                        href="#"
+                        class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500"
+                        >Services
+                        <span class=""
+                          ><i
+                            class="fa-solid fa-angle-down text-sm"
+                            aria-hidden="true"
+                          ></i></span
+                      ></a>
+
+                      <ul
+                        class="sub-menu absolute top-full z-10 bg-background shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
+                      >
+                        <li>
+                          <a
+                            href="services.html"
+                            class="font-semibold font-jost hover hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
+                            >Services</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="service-details.html"
+                            class="font-semibold font-jost hover hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
+                            >Service Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="leading-[164%] relative py-5 group">
+                      <a
+                        href="#"
+                        class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500"
+                        >Blog
+                        <span class=""
+                          ><i
+                            class="fa-solid fa-angle-down text-sm"
+                            aria-hidden="true"
+                          ></i></span
+                      ></a>
+
+                      <ul
+                        class="sub-menu absolute top-full z-10 bg-background shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
+                      >
+                        <li>
+                          <a
+                            href="blog.html"
+                            class="font-semibold font-jost hover hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
+                            >Blog</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="blog-details.html"
+                            class="font-semibold font-jost hover hover:bg-primary transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300"
+                            >Blog Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="leading-[164%] relative py-5 group">
+                      <a
+                        href="#"
+                        class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500"
+                        >Page
+                        <span class=""
+                          ><i
+                            class="fa-solid fa-angle-down text-sm"
+                            aria-hidden="true"
+                          ></i></span
+                      ></a>
+
+                      <ul
+                        class="sub-menu absolute top-full z-10 bg-background shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
+                      >
+                        <li>
+                          <a
+                            href="about.html"
+                            class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b"
+                            >About</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="services.html"
+                            class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b"
+                            >Services</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="service-details.html"
+                            class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b"
+                            >Service Details</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="faq.html"
+                            class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b"
+                            >Faq</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="portfolio.html"
+                            class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b"
+                            >Portfolio</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="contact.html"
+                            class="font-semibold font-jost transition-all duration-500 py-3 px-2.5 block border-b"
+                            >Contact</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="leading-[164%] relative group">
+                      <a
+                        href="contact.html"
+                        class="font-semibold text-lg font-jost group-hover:text-primary-foreground transition-all duration-500"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <div class="flex items-center gap-5">
+                  <div class="ml-16 cursor-pointer search-btn">
+                    <i
+                      class="fa-solid fa-magnifying-glass"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <!-- <p class="h-11 w-[1px] bg-muted xl:block hidden"></p> -->
+                  <a
+                    href="contact.html"
+                    class="btnQuote rounded-md sm:flex items-center gap-2.5"
+                  >
+                    Get A Quote
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                  </a>
+                  <div class="block xl:hidden">
+                    <div
+                      class="flex flex-col items-end cursor-pointer transition-all duration-500 offcanvaTragger"
+                    >
+                      <span class="block h-[3px] w-5 bg-muted"></span>
+                      <span class="block h-[3px] w-7.5 bg-muted mt-2"></span>
+                      <span class="block h-[3px] w-5 bg-muted mt-2"></span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- bottom header -->
       </div>
-      <!-- bottom header -->
-    </div>
-  </header>
+    </header>
 
-  <section id="exploring" class="bg-warm pt-[78px] lg:mb-15 mb-10 relative">
-    <div class="container relative">
-      <div class="flex flex-col items-center text-center relative z-10">
-        <h1
-          class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]">
-          <span class="txtExploring relative">Exploring Minds
-            <span class="absolute -left-6 top-1 text-3xl"><i class="icon-three-line"></i></span></span>
-          <br>
-          <span class="txtElementary">Elementary</span>
-          <span class="txtSchool text-destructive-foreground">School</span>
-        </h1>
+    <!-- exploring -->
 
-        <div class="flex absolute right-[87px] top-14 animate-skw">
-          <img src="./images/shap.png" alt="shap-2" class="w-7.5 h-12.5 relative top-9" />
-          <img src="./images/shap.png" alt="shap-1" />
-          <img src="./images/shap.png" alt="shap-2" class="w-5 h-8 -mt-7" />
+    <section id="exploring" class="bg-warm pt-[78px] lg:mb-15 mb-10 relative">
+      <div class="container relative">
+        <div class="flex flex-col items-center text-center relative z-10">
+          <h1
+            class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]"
+          >
+            <span class="txtExploring relative"
+              >Exploring Minds
+              <span class="absolute -left-6 top-1 text-3xl"
+                ><i class="icon-three-line"></i></span
+            ></span>
+            <br />
+            <span class="txtElementary">Elementary</span>
+            <span class="txtSchool text-destructive-foreground">School</span>
+          </h1>
+
+          <div class="flex absolute right-[87px] top-14 animate-skw">
+            <img
+              src="./images/shap.png"
+              alt="shap-2"
+              class="w-7.5 h-12.5 relative top-9"
+            />
+            <img src="./images/shap.png" alt="shap-1" />
+            <img src="./images/shap.png" alt="shap-2" class="w-5 h-8 -mt-7" />
+          </div>
+
+          <p class="txtStarting pt-5 max-w-[431px]">
+            Starting a corporate business typically involves several steps, such
+            as develo a business
+          </p>
+          <a
+            href=""
+            class="btnLearnMore mt-6 rounded-md max-h-15 leading-normal btn"
+            >Learn More</a
+          >
+        </div>
+        <div
+          id="exploring__banner"
+          class="absolute left-2.5 lg:top-0 top-10 lg:max-w-full max-w-[200px] sm:block hidden animate-up-down"
+        >
+          <img src="./images/boy_img_1.png" alt="banner-img-1" />
+          <span
+            class="absolute -left-2.5 top-[9px] border-2 border-primary rounded-[125px] w-full h-full"
+          ></span>
         </div>
 
-        <p class="txtStarting pt-5 max-w-[431px]">
-          Starting a corporate business typically involves several steps, such
-          as develo a business
-        </p>
-        <a href="" class="btnLearnMore mt-6 rounded-md max-h-15 leading-normal btn">Learn More</a>
-      </div>
-      <div id="exploring__banner"
-        class=" absolute left-2.5 lg:top-0 top-10 lg:max-w-full max-w-[200px] sm:block hidden animate-up-down">
-        <img src="./images/boy_img_1.png" alt="banner-img-1" />
-        <span class="absolute -left-2.5 top-[9px] border-2 border-primary rounded-[125px] w-full h-full"></span>
-      </div>
+        <div
+          id="exploring__banner"
+          class="absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down"
+        >
+          <img src="./images/boy_img_2.png" alt="banner-img-2" />
+          <span
+            class="absolute -left-2.5 top-[9px] border-2 border-secondary rounded-[125px] max-h-[369px] w-full h-full"
+          ></span>
+        </div>
 
-      <div id="exploring__banner" class=" absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down">
-        <img src="./images/boy_img_2.png" alt="banner-img-2" />
-        <span
-          class="absolute -left-2.5 top-[9px] border-2 border-secondary rounded-[125px] max-h-[369px] w-full h-full"></span>
+        <div class="lg:pt-[72px]">
+          <img src="./images/painting.png" alt="painting" />
+        </div>
       </div>
+      <!-- circle shap -->
+      <div class="lg:block hidden">
+        <div class="absolute left-0 top-[60px] animate-left-right-2">
+          <img src="./images/left-circle-1.png" alt="img" />
+        </div>
+        <div class="absolute left-[37px] top-[186px] animate-left-right-2">
+          <img src="./images/left-circle-2.png" alt="img" />
+        </div>
+        <div
+          id="exploring__banner"
+          class="absolute right-0 bottom-[165px] animate-up-down"
+        >
+          <img src="./images/right-circle.png" alt="img" />
+        </div>
+      </div>
+      <!-- circle shap -->
+    </section>
 
-      <div class="lg:pt-[72px]">
-        <img src="./images/painting.png" alt="painting" />
-      </div>
-    </div>
-    <!-- circle shap -->
-    <div class="lg:block hidden">
-      <div class="absolute left-0 top-[60px] animate-left-right-2">
-        <img src="./images/left-circle-1.png" alt="img" />
-      </div>
-      <div class="absolute left-[37px] top-[186px] animate-left-right-2">
-        <img src="./images/left-circle-2.png" alt="img" />
-      </div>
-      <div id="exploring__banner" class=" absolute right-0 bottom-[165px] animate-up-down">
-        <img src="./images/right-circle.png" alt="img" />
-      </div>
-    </div>
-    <!-- circle shap -->
-  </section>
+    <!-- invest -->
 
-  <section id="invest" class="lg:pt-15 pt-10 lg:pb-15 pb-10">
-    <div class="container">
-      <div class="grid xl:grid-cols-2 lg:grid-cols-[40%_auto] grid-cols-1 gap-7.5">
-        <!-- left side start -->
-        <div class="invest__left lg:max-w-[600px]">
-          <p class="txtTalks font-bubblegum-sans text-[19px] wow fadeInUp"
-            style="visibility: visible; animation-name: fadeInUp;">Number Talks</p>
+    <section id="invest" class="lg:pt-15 pt-10 lg:pb-15 pb-10">
+      <div class="container">
+        <div
+          class="grid xl:grid-cols-2 lg:grid-cols-[40%_auto] grid-cols-1 gap-7.5"
+        >
+          <!-- left side start -->
+          <div
+            class="invest__left wow animate__animated aanimate__backInUp lg:max-w-[600px]"
+          >
+            <p
+              class="txtTalks font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              Number Talks
+            </p>
+            <h2
+              class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[410px] pb-5 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              Invest in education invest <br />
+              in the future
+            </h2>
+            <p
+              class="txtLorem wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
+              dictum facilisis sem. Imperdiet massa turpis sit proin metus
+              volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
+              lectus mi ultricies dictum
+            </p>
+            <button
+              class="btnQuote__invest border border-gray-300 rounded-md lg:mt-10 mt-7 btn"
+            >
+              Get a quote
+            </button>
+          </div>
+          <!-- left side end -->
+
+          <!-- right side start -->
+          <div class="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
+            <!-- card -->
+            <div
+              class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__backInUp"
+              data-wow-delay=".3s"
+              style="visibility: visible; animation-delay: 0.3s"
+            >
+              <div
+                class="icon__wrapper rounded-full bg-primary lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-school lg:text-[40px] text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">
+                  20K
+                </h4>
+                <p>Running Students</p>
+              </div>
+            </div>
+            <!-- card -->
+            <!-- card -->
+            <div
+              class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__backInUp"
+              data-wow-delay=".3s"
+              style="visibility: visible; animation-delay: 0.3s"
+            >
+              <div
+                class="icon__wrapper1 rounded-full bg-destructive lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-book-open lg:text-[40px] text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">
+                  13K
+                </h4>
+                <p>Completed</p>
+              </div>
+            </div>
+            <!-- card -->
+            <!-- card -->
+            <div
+              class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__backInUp"
+              data-wow-delay=".3s"
+              style="visibility: visible; animation-delay: 0.3s"
+            >
+              <div
+                class="icon__wrapper2 rounded-full bg-green lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-award lg:text-[40px] text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">
+                  3K
+                </h4>
+                <p>Award Winning</p>
+              </div>
+            </div>
+            <!-- card -->
+            <!-- card -->
+            <div
+              class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__backInUp"
+              data-wow-delay=".3s"
+              style="visibility: visible; animation-delay: 0.3s"
+            >
+              <div
+                class="icon__wrapper3 rounded-full bg-secondary lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-trophy lg:text-[40px] text-3xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">
+                  13K
+                </h4>
+                <p>Guardian Satishfaction</p>
+              </div>
+            </div>
+            <!-- card -->
+          </div>
+          <!-- right side end -->
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="lg:pt-15 pt-10 lg:pb-15 pb-10">
+      <div class="container">
+        <div class="grid lg:grid-cols-[60%_40%] grid-cols-1 items-center">
+          <div class="relative">
+            <div class="flex sm:flex-row flex-col sm:items-end gap-6">
+              <div
+                class="wow animate__animated animate__fadeInUp"
+                data-wow-delay="1200"
+                style="visibility: visible; animation-name: fadeInUp"
+              >
+                <div class=" ">
+                  <img src="./images/shap-1.png" alt="shap" />
+                </div>
+                <div class="ml-9">
+                  <img
+                    src="./images/about-1.png"
+                    alt="about-bg"
+                    class="w-full"
+                  />
+                </div>
+              </div>
+              <div class="flex sm:flex-col gap-8">
+                <div
+                  class="txtAcademy bg-warm max-w-[220px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col items-center justify-center text-center"
+                >
+                  <img src="./images/icreement.png" alt="icreement" />
+                  <h6 class="txtAcademy text-xl font-bold">Academy</h6>
+                  <p class="txtLadder1">Learning Ladder School</p>
+                </div>
+                <div
+                  class="txtLadder bg-background max-w-[220px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col justify-center"
+                >
+                  <h6 class="txt10 text-[32px]">10+</h6>
+                  <p class="txtLadder1">Learning Ladder School</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:max-w-[439px] pt-7.5">
+            <p
+              class="txtAbout text-secondary-foreground font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp"
+              style="visibility: visible"
+            >
+              About Us
+            </p>
+            <h2
+              class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] pb-5 wow animate__animated animate__fadeInUp"
+              data-wow-delay=".3s"
+              style="visibility: visible; animation-delay: 0.3s"
+            >
+              Unlocking Potential, One Child at a just Time in school
+            </h2>
+            <p
+              class="txtLorem wow animate__animated animate__fadeInUp"
+              data-wow-delay=".4s"
+              style="visibility: visible; animation-delay: 0.4s"
+            >
+              Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
+              dictum facilisis sem. Imperdiet massa turpis sit proin metus
+              volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
+              lectus mi ultricies dictum
+            </p>
+
+            <a
+              href="#"
+              class="btnQuote__invest border border-gray-200 rounded-md lg:mt-10 mt-7 btn"
+              >Get a quote</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="educational" class="lg:pt-15 pt-10 lg:pb-15 pb-10 relative">
+      <div class="container">
+        <div class="text-center flex flex-col items-center">
+          <p
+            class="educational__programs font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp"
+            style="visibility: visible"
+          >
+            Educational Programs
+          </p>
           <h2
-            class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[410px] pb-5 wow fadeInUp"
-            data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Invest in
-            education invest <br> in the future</h2>
-          <p class="txtLorem wow fadeInUp" data-wow-delay=".3s"
-            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;"> Lorem ipsum dolor sit amet
-            consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat
-            loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum</p>
-          <button class="btnQuote__invest border border-gray-300 rounded-md lg:mt-10 mt-7 btn">Get a quote</button>
+            class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[630px] wow animate__animated animate__fadeInUp"
+            data-wow-delay=".3s"
+            style="visibility: visible; animation-delay: 0.3s"
+          >
+            Strong Foundation for Success For Nurturing Curiosityl
+          </h2>
         </div>
-        <!-- left side end -->
+        <div class="lg:pl-11">
+          <div
+            class="educational__content grid md:grid-cols-2 grid-cols-1 gap-y-7.5 lg:gap-x-[74px] gap-x-5 lg:pt-15 pt-10"
+          >
+            <!-- card start -->
+            <div
+              id="educational_grid"
+              class="educational_grid educational_item relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-3xl hover:border-transparent group/card wow animate__animated animate__fadeInUp"
+              data-wow-delay=".3s"
+              style="visibility: visible; animation-delay: 0.3s"
+            >
+              <div
+                class="educational__icon md:max-w-[90px] max-w-[80px] w-full max-h-[90px] flex justify-center items-center rounded-[10px] border border-[#F2F2F2] bg-background sm:p-[14px] p-2.5 static lg:absolute -left-11 top-1/2 lg:-translate-y-1/2 transition-all duration-500"
+              >
+                <i class="fa-solid fa-car-side md:text-4xl text-[20px]"></i>
+              </div>
+              <div class="lg:pl-11 mt-4 lg:mt-0">
+                <h4>
+                  <a
+                    href="#"
+                    class="txtTitle font-semibold lg:text-2xl text-xl group-hover/card:text-green-foreground transition-all duration-500"
+                    >Online Class</a
+                  >
+                </h4>
+                <p class="lg:mt-4 mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit platea
+                  the ,osr of a proin mollis pretium facilisi in, ligula
+                  volutpat
+                </p>
+                <a
+                  href="#"
+                  class="btnReadMore inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
+                >
+                  <span
+                    class="group-hover/btn:text-green-foreground transition-all duration-500"
+                    >Read More</span
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div
+              id="educational_grid"
+              class="educational_grid educational_item relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-3xl hover:border-transparent group/card wow animate__animated animate__fadeInUp"
+              data-wow-delay=".4s"
+              style="visibility: visible; animation-delay: 0.4s"
+            >
+              <div
+                class="educational__icon md:max-w-[90px] max-w-[80px] w-full max-h-[90px] flex justify-center items-center rounded-[10px] border border-[#F2F2F2] bg-background sm:p-[14px] p-2.5 static lg:absolute -left-11 top-1/2 lg:-translate-y-1/2 transition-all duration-500 text-green-foreground group-hover/card:bg-green group-hover/card:text-cream-foreground"
+              >
+                <i class="fa-solid fa-cart-flatbed md:text-4xl text-[20px]"></i>
+              </div>
+              <div class="lg:pl-11 mt-4 lg:mt-0">
+                <h4>
+                  <a
+                    href="#"
+                    class="txtTitle font-semibold lg:text-2xl text-xl group-hover/card:text-green-foreground transition-all duration-500"
+                    >Formal Tuition</a
+                  >
+                </h4>
+                <p class="lg:mt-4 mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit platea
+                  the ,osr of a proin mollis pretium facilisi in, ligula
+                  volutpat
+                </p>
+                <a
+                  href="#"
+                  class="btnReadMore inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
+                >
+                  <span
+                    class="group-hover/btn:text-green-foreground transition-all duration-500"
+                    >Read More</span
+                  >
+                  <span
+                    class="group-hover/btn:ml-1 group-hover/btn:text-green-foreground transition-all duration-500"
+                  ></span>
+                </a>
+              </div>
+            </div>
+            <!-- card end -->
 
-        <!-- right side start -->
-        <div class="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
-          <!-- card -->
-          <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow fadeInUp"
-            data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+            <!-- card start -->
             <div
-              class="icon__wrapper rounded-full bg-primary lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
-              <i class="fa-solid fa-school lg:text-[40px] text-3xl text-cream-foreground"></i>
+              id="educational_grid"
+              class="educational_grid relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-3xl hover:border-transparent group/card wow animate__animated animate__fadeInUp"
+              data-wow-delay=".5s"
+              style="visibility: visible; animation-delay: 0.5s"
+            >
+              <div
+                class="educational__icon md:max-w-[90px] max-w-[80px] w-full max-h-[90px] flex justify-center items-center rounded-[10px] border border-[#F2F2F2] bg-background sm:p-[14px] p-2.5 static lg:absolute -left-11 top-1/2 lg:-translate-y-1/2 transition-all duration-500 text-green-foreground group-hover/card:bg-green group-hover/card:text-cream-foreground"
+              >
+                <i class="fa fa-hamburger md:text-4xl text-[20px]"></i>
+              </div>
+              <div class="lg:pl-11 mt-4 lg:mt-0">
+                <h4>
+                  <a
+                    href="#"
+                    class="txtTitle font-semibold lg:text-2xl text-xl group-hover/card:text-green-foreground transition-all duration-500"
+                    >Preschool</a
+                  >
+                </h4>
+                <p class="lg:mt-4 mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit platea
+                  the ,osr of a proin mollis pretium facilisi in, ligula
+                  volutpat
+                </p>
+                <a
+                  href="#"
+                  class="btnReadMore inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
+                >
+                  <span
+                    class="group-hover/btn:text-green-foreground transition-all duration-500"
+                    >Read More</span
+                  >
+                  <span
+                    class="group-hover/btn:ml-1 group-hover/btn:text-green-foreground transition-all duration-500"
+                  >
+                  </span>
+                </a>
+              </div>
             </div>
-            <div>
-              <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">20K</h4>
-              <p>Running Students</p>
-            </div>
-          </div>
-          <!-- card -->
-          <!-- card -->
-          <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow fadeInUp"
-            data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-            <div
-              class="icon__wrapper1 rounded-full bg-destructive lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
-              <i class="fa-solid fa-book-open lg:text-[40px] text-3xl text-cream-foreground"></i>
-            </div>
-            <div>
-              <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">13K</h4>
-              <p>Completed</p>
-            </div>
-          </div>
-          <!-- card -->
-          <!-- card -->
-          <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow fadeInUp"
-            data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-            <div
-              class="icon__wrapper2 rounded-full bg-green lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
-              <i class="fa-solid fa-award lg:text-[40px] text-3xl text-cream-foreground"></i>
-            </div>
-            <div>
-              <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">3K</h4>
-              <p>Award Winning</p>
-            </div>
-          </div>
-          <!-- card -->
-          <!-- card -->
-          <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow fadeInUp"
-            data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-            <div class="icon__wrapper3 rounded-full bg-secondary lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
-              <i class="fa-solid fa-trophy lg:text-[40px] text-3xl text-cream-foreground"></i>
-            </div>
-            <div>
-              <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">13K</h4>
-              <p>Guardian Satishfaction</p>
-            </div>
-          </div>
-          <!-- card -->
+            <!-- card end -->
 
+            <!-- card start -->
+            <div
+              id="educational_grid"
+              class="educational_grid relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-3xl hover:border-transparent group/card wow animate__animated animate__fadeInUp"
+              data-wow-delay=".6s"
+              style="visibility: visible; animation-delay: 0.6s"
+            >
+              <div
+                class="educational__icon md:max-w-[90px] max-w-[80px] w-full max-h-[90px] flex justify-center items-center rounded-[10px] border border-[#F2F2F2] bg-background sm:p-[14px] p-2.5 static lg:absolute -left-11 top-1/2 lg:-translate-y-1/2 transition-all duration-500 text-green-foreground group-hover/card:bg-green group-hover/card:text-cream-foreground"
+              >
+                <i class="fa fa-address-book md:text-4xl text-[20px]"></i>
+              </div>
+              <div class="lg:pl-11 mt-4 lg:mt-0">
+                <h4>
+                  <a
+                    href="service-details.html"
+                    class="txtTitle font-semibold lg:text-2xl text-xl group-hover/card:text-green-foreground transition-all duration-500"
+                    >Special Tuition</a
+                  >
+                </h4>
+                <p class="lg:mt-4 mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit platea
+                  the ,osr of a proin mollis pretium facilisi in, ligula
+                  volutpat
+                </p>
+                <a
+                  href="#"
+                  class="btnReadMore inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
+                >
+                  <span
+                    class="group-hover/btn:text-green-foreground transition-all duration-500"
+                    >Read More</span
+                  >
+                  <span
+                    class="group-hover/btn:ml-1 group-hover/btn:text-green-foreground transition-all duration-500"
+                  >
+                  </span>
+                </a>
+              </div>
+            </div>
+            <!-- card end -->
+          </div>
         </div>
-        <!-- right side end -->
       </div>
-    </div>
-  </section>
-  <!-- flowbite -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+      <!-- shap start -->
+      <div
+        class="image__container absolute top-10 right-11 z-[-1] lg:max-w-full max-w-36 md:block hidden animate-left-right"
+      >
+        <img
+          src="./images/pencil-rocket.png"
+          alt="pencil"
+          class="main__image w-full h-auto"
+        />
+      </div>
+      <!-- shap end -->
+    </section>
 
-  <!-- wow -->
-  <!-- <script src="./libs/wowjs/wow.min.js"></script> -->
-  <script>
-    new WOW().init();
-  </script>
-  <script src="https://kit.fontawesome.com/1cbbb02fe6.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <!-- flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/1cbbb02fe6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
