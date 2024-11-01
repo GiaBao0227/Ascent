@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    /*ngoài*/
+    padding: 0;
+    /*trong*/
+    font-size: 17px;
+    font-family: Nunito;
+    font-weight: bolder;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .social li a {
+    border-color: #ccc;
+}
+
+body.dark-mode .theme-toggle {
+    color: #fff;
+    background-color: #444;
+}
+
+/*  */
+.infor ul li {
+    display: inline;
+    margin-left: 30px;
+    color: white;
+
+}
+
+.contact ul li {
+    display: inline;
+    margin-left: 15px;
+    color: white;
+
+    border: 10px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.nav {
+    margin-right: -70px;
+}
+
+.contact ul li:hover {
+    background-color: #F7941E;
+    border-radius: 10px;
+}
+
+.social {
+    margin-left: 40px;
+    gap: 8px !important;
+}
+
+.social li a {
+    width: 25px;
+    /* Giảm kích thước icon */
+    height: 25px;
+    font-size: 2px;
+    /* Thu nhỏ kích thước icon */
+}
+
+#top-header {
+    background-color: #ED145B;
+}
+
+ul.hmenu>li>a:hover {
+    color: #F9A11E;
+    font-weight: bolder;
+}
+
+ul.hmenu>li {
+    float: left;
+    margin: 0 5px;
+    position: relative;
+}
+
+ul.hmenu>li:hover>.sub-menu {
+    display: block;
+    background-color: ivory;
+}
+
+ul.sub-menu {
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    display: none;
+}
+
+.sub-menu>li>a {
+    display: block;
+    line-height: 20px;
+    /* border-bottom: 1px dotted orangered; */
+    text-decoration: none;
+    /* font-variant: small-caps; */
+    /* padding-left: 45px; */
+    font-weight: bolder;
+    color: black;
+    background-color: ivory;
+    width: 200px;
+}
+
+.sub-menu>li>a:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #F7941E;
+}
+
+.btnQuote {
+    background: linear-gradient(90deg, #73BE48 50%, #1BB6AF 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateX(5px);
+}
+
+.btnQuote:hover {
+    background-position: left;
+    /* Di chuyển nền sang trái khi hover */
+}
+
+.btnLearnMore {
+    background: linear-gradient(90deg, #1BB6AF 50%, #73BE48 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateY(5px);
+}
+
+.btnLearnMore:hover {
+    background-position: left;
+    /* Di chuyển nền sang trái khi hover */
+}
+
+.txtSchool {
+    color: #ED145B;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.txtElementary {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.txtExploring {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.txtStarting {
+    color: #7B7978;
+}
+
+#exploring {
+    background-color: #FFF0E5;
+}
+
+@keyframes upDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Điều chỉnh độ cao của chuyển động */
+    }
+}
+
+#exploring__banner {
+    animation: upDown 3s ease-in-out infinite;
+}
+
+@keyframes leftRight {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+        /* Điều chỉnh khoảng cách di chuyển */
+    }
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+
+    }
+
+}
+
+.animate-left-right {
+    animation: moveLeftRight 3s ease-in-out infinite;
+}
+
+
+.animate-left-right-2 {
+    animation: leftRight 3s ease-in-out infinite;
+}
+
+#invest {
+    margin-left: 15px;
+}
+
+.txtTalks {
+    color: #F7941E;
+}
+
+.txtLorem {
+    color: #767676;
+}
+
+.btnQuote__invest {
+    background: linear-gradient(90deg, #1BB6AF 50%, #FFFFFF 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateY(5px);
+}
+
+.btnQuote__invest:hover {
+    background-position: left;
+    color: white;
+    /* Di chuyển nền sang trái khi hover */
+}
+
+.icon__wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__wrapper::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #F7941E;
+    ;
+    /* Màu viền vòng tròn */
+    background-color: #F7941E;
+    border-radius: 50%;
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
+}
+
+.icon__wrapper1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__wrapper1::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #ED145B;
+    /* Màu viền vòng tròn */
+    background-color: #ED145B;
+    border-radius: 50%;
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
+}
+
+.icon__wrapper2 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__wrapper2::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #73BE48;
+    /* Màu viền vòng tròn */
+    background-color: #73BE48;
+    border-radius: 50%;
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
+}
+
+.icon__wrapper3 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon__wrapper3::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #1CBBB4;
+    /* Màu viền vòng tròn */
+    background-color: #1CBBB4;
+    border-radius: 50%;
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
+}
+
+.invest__left .wow {
+    visibility: hidden;
+    /* Đảm bảo rằng các phần tử sẽ chỉ hiện khi được kích hoạt bởi Wow.js */
+}
+
+.invest__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Hai cột có chiều rộng bằng nhau */
+    grid-template-rows: auto;
+    /* Đặt chiều cao tự động theo nội dung */
+    gap: 10px;
+}
+
+.txtAcademy {
+    background-color: #FFF0E5;
+
+}
+
+.txtLadder {
+    box-shadow: 0px 4.8px 24.4px rgba(19, 16, 34, 0.1)
+}
+
+.txt10 {
+    color: #1CBBB4 !important;
+    font-weight: bolder !important;
+}
+
+.txtLadder1 {
+    color: #68688B;
+}
+
+.txtAbout {
+    color: #2CBFB9;
+}
+
+/*  */
+#educational {
+    margin-left: 10px;
+}
+
+/* Làm mờ hình ảnh pencil-rocket */
+.image__container {
+    position: relative;
+    display: inline-block;
+}
+
+.main__image {
+    position: relative;
+    z-index: 1;
+}
+
+/* CSS cho phần tử chính */
+.educational_grid {
+    background-color: white;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+
+/* Hiệu ứng hover cho toàn bộ khung */
+.educational_grid:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+}
+
+/* Hiệu ứng hover cho tiêu đề (txtTitle) */
+.educational_grid:hover .txtTitle {
+    color: #73BE48;
+}
+
+/* Hiệu ứng hover cho icon */
+.educational__icon {
+    color: #73BE48;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.educational_grid:hover .educational__icon {
+    background-color: #73BE48;
+    color: #fff;
+}
+
+/* Hiệu ứng hover cho nút Read More */
+.btnReadMore {
+    transition: color 0.5s;
+}
+
+.btnReadMore:hover {
+    color: #7EC357;
+    cursor: pointer;
+}
+
+.educational__programs {
+    color: #73BE48;
+}
+
+/*  */
+.txtPortfolio {
+    color: #1CBBB4;
+}
+
+/* Ẩn các radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Cài đặt chung cho các mục */
+.target-tab {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    color: #686868;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+/* Hiệu ứng hover cho tất cả các mục */
+.target-tab:hover {
+    background-color: #FFA500;
+    color: #FFF;
+}
+
+/* Thiết lập cho mục "active" bằng cách sử dụng input radio */
+input[type="radio"]:checked+.target-tab {
+    background-color: #FFA500;
+    color: #FFF;
+    border: 1px solid transparent;
+}
+
+/* Hiệu ứng cho mục active khi hover */
+input[type="radio"]:checked+.target-tab:hover {
+    background-color: #FF8800;
+    color: #FFF;
+}
+
+.education1 {
+    color: black;
+}
+
+.portfolio__item {
+    margin: 10px 10px 10px 40px;
+}
+
+.portfolio__item1:hover {
+    background-color: #F7941E;
+    color: #FFF;
+}
+
+.circle__icon {
+    background-color: #fff !important;
+    /* Màu nền trắng */
+    color: #ff69b4 !important;
+    /* Màu chữ hồng */
+    transition: all 0.3s ease;
+}
+
+#service {
+    margin-left: 20px;
+}
+
+.btnReadMore__service {
+    background: linear-gradient(90deg, #1BB6AF 50%, #FFFFFF 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateY(5px);
+}
+
+.btnReadMore__service:hover {
+    background-position: left;
+    color: white;
+    /* Di chuyển nền sang trái khi hover */
+}
+
+.image__service {
+    margin-top: 2px;
+    /* Hoặc 1px nếu bạn muốn khoảng cách ít hơn */
+    display: block;
+}
+
+
+.pt-\[70px\] {
+    padding-top: 70px;
+}
+
+.container__footer {
+    margin-left: 40px;
+}
+
+.pt-7\.5 {
+    padding-top: 30px;
+}
+
+.bg-warm {
+    background-color: #FFF0E4;
+
+}
+
+.bg-warm:hover {
+    background-color: green;
+
+}
+
+.text-green-foreground {
+    color: #80C459;
+}
+
+.bg-primary {
+    background-color: #F7941E;
+    width: 50px;
+    height: 50px;
+
+}
+
+.text-cream-foreground {
+    color: #FFFFFF;
+}
+
+.contactEnd li {
+    margin-left: 30px;
+}
