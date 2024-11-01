@@ -14,6 +14,21 @@
     justify-content: space-between;
 }
 
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .social li a {
+    border-color: #ccc;
+}
+
+body.dark-mode .theme-toggle {
+    color: #fff;
+    background-color: #444;
+}
+
+/*  */
 .infor ul li {
     display: inline;
     margin-left: 30px;
@@ -47,7 +62,16 @@
 }
 
 .social {
-    margin-left: 60px;
+    margin-left: 40px;
+    gap: 8px !important;
+}
+
+.social li a {
+    width: 25px;
+    /* Giảm kích thước icon */
+    height: 25px;
+    font-size: 2px;
+    /* Thu nhỏ kích thước icon */
 }
 
 #top-header {
@@ -232,7 +256,7 @@ ul.sub-menu {
 }
 
 .txtLorem {
-    color: #777777;
+    color: #767676;
 }
 
 .btnQuote__invest {
@@ -371,6 +395,15 @@ ul.sub-menu {
     /* Đảm bảo rằng các phần tử sẽ chỉ hiện khi được kích hoạt bởi Wow.js */
 }
 
+.invest__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Hai cột có chiều rộng bằng nhau */
+    grid-template-rows: auto;
+    /* Đặt chiều cao tự động theo nội dung */
+    gap: 10px;
+}
+
 .txtAcademy {
     background-color: #FFF0E5;
 
@@ -443,12 +476,152 @@ ul.sub-menu {
     transition: color 0.5s;
 }
 
- .btnReadMore:hover {
+.btnReadMore:hover {
     color: #7EC357;
     cursor: pointer;
 }
 
-.educational__programs{
+.educational__programs {
     color: #73BE48;
 }
+
 /*  */
+.txtPortfolio {
+    color: #1CBBB4;
+}
+
+/* Ẩn các radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Cài đặt chung cho các mục */
+.target-tab {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    color: #686868;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+/* Hiệu ứng hover cho tất cả các mục */
+.target-tab:hover {
+    background-color: #FFA500;
+    color: #FFF;
+}
+
+/* Thiết lập cho mục "active" bằng cách sử dụng input radio */
+input[type="radio"]:checked+.target-tab {
+    background-color: #FFA500;
+    color: #FFF;
+    border: 1px solid transparent;
+}
+
+/* Hiệu ứng cho mục active khi hover */
+input[type="radio"]:checked+.target-tab:hover {
+    background-color: #FF8800;
+    color: #FFF;
+}
+
+.education1 {
+    color: black;
+}
+
+.portfolio__item {
+    margin: 10px 10px 10px 40px;
+}
+
+.portfolio__item1:hover {
+    background-color: #F7941E;
+    color: #FFF;
+}
+
+.circle__icon {
+    background-color: #fff !important;
+    /* Màu nền trắng */
+    color: #ff69b4 !important;
+    /* Màu chữ hồng */
+    transition: all 0.3s ease;
+}
+
+#service {
+    margin-left: 20px;
+}
+
+.btnReadMore__service {
+    background: linear-gradient(90deg, #1BB6AF 50%, #FFFFFF 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateY(5px);
+}
+
+.btnReadMore__service:hover {
+    background-position: left;
+    color: white;
+    /* Di chuyển nền sang trái khi hover */
+}
+
+.image__service {
+    margin-top: 2px;
+    /* Hoặc 1px nếu bạn muốn khoảng cách ít hơn */
+    display: block;
+}
+
+
+.pt-\[70px\] {
+    padding-top: 70px;
+}
+
+.container__footer {
+    margin-left: 40px;
+}
+
+.pt-7\.5 {
+    padding-top: 30px;
+}
+
+.bg-warm {
+    background-color: #FFF0E4;
+
+}
+
+.bg-warm:hover {
+    background-color: green;
+
+}
+
+.text-green-foreground {
+    color: #80C459;
+}
+
+.bg-primary {
+    background-color: #F7941E;
+    width: 50px;
+    height: 50px;
+
+}
+
+.text-cream-foreground {
+    color: #FFFFFF;
+}
+
+.contactEnd li {
+    margin-left: 30px;
+}
