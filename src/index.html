@@ -25,6 +25,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!--  -->
     <link
       rel="stylesheet"
@@ -81,26 +85,15 @@
                 </ul>
               </div>
               <div class="contact">
-                <ul class="social flex items-center gap-3">
+                <ul class="social flex items-center gap-4">
                   <li>
                     <a
                       href=""
                       class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
-                      ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
-                      ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
-                      ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                      ><i
+                        class="contact__icon fa-brands fa-facebook-f"
+                        aria-hidden="true"
+                      ></i
                     ></a>
                   </li>
                   <li>
@@ -108,7 +101,27 @@
                       href=""
                       class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
                       ><i
-                        class="fa-brands fa-pinterest-p"
+                        class="contact__icon fa-brands fa-x-twitter"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
+                      ><i
+                        class="contact__icon fa-brands fa-linkedin"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white"
+                      ><i
+                        class="contact__icon fa-brands fa-pinterest-p"
                         aria-hidden="true"
                       ></i
                     ></a>
@@ -118,7 +131,10 @@
                       href="javascript:void(0);"
                       class="theme-toggle rounded-md w-5 h-5 flex text-xs items-center justify-center border border-white"
                     >
-                      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                      <i
+                        class="contact__icon fa-solid fa-moon"
+                        aria-hidden="true"
+                      ></i>
                     </a>
                   </li>
                 </ul>
@@ -142,7 +158,7 @@
               </div>
               <!-- nav -->
 
-              <div class="flex items-center">
+              <div class="nav__header flex items-center">
                 <nav class="nav__bar">
                   <ul class="hmenu flex items-center gap-[25px]">
                     <li class="active leading-[164%] relative py-5 group">
@@ -351,7 +367,10 @@
 
     <section id="exploring" class="bg-warm pt-[78px] lg:mb-15 mb-10 relative">
       <div class="container relative">
-        <div class="flex flex-col items-center text-center relative z-10">
+        <div
+          id="exploring__title"
+          class="flex flex-col items-center text-center relative z-10"
+        >
           <h1
             class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]"
           >
@@ -397,7 +416,7 @@
 
         <div
           id="exploring__banner"
-          class="absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down"
+          class="exploring__banner1 absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down"
         >
           <img src="./images/boy_img_2.png" alt="banner-img-2" />
           <span
@@ -405,7 +424,7 @@
           ></span>
         </div>
 
-        <div class="lg:pt-[72px]">
+        <div id="exploring__logo" class="lg:pt-[72px]">
           <img src="./images/painting.png" alt="painting" />
         </div>
       </div>
@@ -551,11 +570,11 @@
       </div>
     </section>
 
-    <!--  -->
-    <section class="lg:pt-15 pt-10 lg:pb-15 pb-10">
+    <!-- About  -->
+    <section id="about" class="lg:pt-15 pt-10 lg:pb-15 pb-10">
       <div class="container">
         <div class="grid lg:grid-cols-[60%_40%] grid-cols-1 items-center">
-          <div class="relative">
+          <div class="about_left relative">
             <div class="flex sm:flex-row flex-col sm:items-end gap-6">
               <div
                 class="wow animate__animated animate__fadeInUp"
@@ -584,14 +603,14 @@
                 <div
                   class="txtLadder bg-background max-w-[220px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col justify-center"
                 >
-                  <h6 class="txt10 text-[32px]">10+</h6>
+                  <h6 class="txt10 font-extrabold text-[32px]">10+</h6>
                   <p class="txtLadder1">Learning Ladder School</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="lg:max-w-[439px] pt-7.5">
+          <div class="about_right lg:max-w-[439px] pt-7.5">
             <p
               class="txtAbout text-secondary-foreground font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp"
               style="visibility: visible"
@@ -626,10 +645,13 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- educational -->
     <section id="educational" class="lg:pt-15 pt-10 lg:pb-15 pb-10 relative">
       <div class="container">
-        <div class="text-center flex flex-col items-center">
+        <div
+          id="educational__programs"
+          class="text-center flex flex-col items-center"
+        >
           <p
             class="educational__programs font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp"
             style="visibility: visible"
@@ -641,7 +663,8 @@
             data-wow-delay=".3s"
             style="visibility: visible; animation-delay: 0.3s"
           >
-            Strong Foundation for Success For Nurturing Curiosityl
+            Strong Foundation for Success For <br />
+            Nurturing Curiosityl
           </h2>
         </div>
         <div class="lg:pl-11">
@@ -651,7 +674,7 @@
             <!-- card start -->
             <div
               id="educational_grid"
-              class="educational_grid educational_item relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-3xl hover:border-transparent group/card wow animate__animated animate__fadeInUp"
+              class="educational_grid educational_grid1 educational_item relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-3xl hover:border-transparent group/card wow animate__animated animate__fadeInUp"
               data-wow-delay=".3s"
               style="visibility: visible; animation-delay: 0.3s"
             >
@@ -729,7 +752,7 @@
             <!-- card start -->
             <div
               id="educational_grid"
-              class="educational_grid relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-3xl hover:border-transparent group/card wow animate__animated animate__fadeInUp"
+              class="educational_grid educational_grid1 relative rounded-[10px] bg-background border-2 border-[#F2F2F2] lg:p-10 p-4 transition-all duration-500 hover:shadow-3xl hover:border-transparent group/card wow animate__animated animate__fadeInUp"
               data-wow-delay=".5s"
               style="visibility: visible; animation-delay: 0.5s"
             >
@@ -814,7 +837,7 @@
       </div>
       <!-- shap start -->
       <div
-        class="image__container absolute top-10 right-11 z-[-1] lg:max-w-full max-w-36 md:block hidden animate-left-right"
+        class="image__container absolute top-10 right-11 lg:max-w-full max-w-36 md:block hidden animate-left-right"
       >
         <img
           src="./images/pencil-rocket.png"
@@ -825,7 +848,7 @@
       <!-- shap end -->
     </section>
 
-    <!--  -->
+    <!-- portfolio -->
     <section id="portfolio" class="lg:pt-15 lg:pb-15 pt-10 pb-10 portfolio">
       <div class="container">
         <div class="text-center flex flex-col items-center">
@@ -1051,8 +1074,11 @@
       </div>
     </section>
 
-    <!--  -->
-    <section id="service" class="pt-15 pb-15 relative bg-warm lg:bg-transparent services">
+    <!-- service -->
+    <section
+      id="service"
+      class="pt-15 pb-15 relative bg-warm lg:bg-transparent services"
+    >
       <div class="container">
         <div
           class="relative after:absolute after:right-0 after:top-0 after:lg:bg-warm after:bg-transparent after:w-[calc(100%-279px)] after:h-[calc(100%-120px)] after:rounded-[10px] after:z-[-1]"
@@ -1062,13 +1088,13 @@
           >
             <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[30%]">
               <p
-                class="txtAbout text-secondary-foreground font-bubblegum-sans text-[19px] wow fadeInUp"
+                class="txtAbout text-secondary-foreground font-bubblegum-sans text-[19px] wow animate__animated animated__fadeInUp"
                 style="visibility: visible; animation-name: fadeInUp"
               >
                 Latest Service
               </p>
               <h2
-                class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
+                class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow animate__animated animate__fadeInUp"
                 data-wow-delay=".3s"
                 style="
                   visibility: visible;
@@ -1076,10 +1102,12 @@
                   animation-name: fadeInUp;
                 "
               >
-                Building a Str Foundation for Success
+                Building a Strong Foundation for Success
               </h2>
             </div>
-            <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%]">
+            <div
+              class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%] text__background"
+            >
               <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit platea
                 pharetra, nostra mattis hendrerit proin mollis pretium facilisi
@@ -1087,7 +1115,7 @@
               </p>
             </div>
           </div>
-          <div class="lg:flex justify-between">
+          <div class="swiper__content lg:flex justify-between">
             <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
               <div class="relative lg:mt-7.5 mt-5">
                 <div
@@ -1122,7 +1150,7 @@
                 <div class="lg:mt-10 mt-5">
                   <a
                     href=""
-                    class="px-7.5 py-5 border border-secondary rounded-md max-h-15 min-w-40 whitespace-nowrap btn group"
+                    class="btnReadMore__service z-[1] px-7.5 py-5 border border-secondary rounded-md max-h-15 min-w-40 whitespace-nowrap btn group"
                     >Read More
                     <i
                       class="fa-solid fa-arrow-right text-secondary-foreground transition-all duration-500 group-hover:text-cream-foreground"
@@ -1173,12 +1201,12 @@
                         class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card"
                       >
                         <i
-                          class="icon-baby-body text-[65px] text-green-foreground"
+                          class="service__icon fa-solid fa-shirt size-1 text-[55px] text-green-foreground"
                         ></i>
                         <h4 class="lg:max-w-[176px] mt-5">
                           <a
-                            href="service-details.html"
-                            class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500"
+                            href="#"
+                            class="title_swiper lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500"
                             >Learning in the School</a
                           >
                         </h4>
@@ -1189,11 +1217,11 @@
                             Lorem ipsum dolor sit amet a the a conse adipiscing
                           </p>
                           <a
-                            href="service-details.html"
+                            href="#"
                             class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
                           >
                             <span
-                              class="group-hover/btn:text-green-foreground transition-all duration-500"
+                              class="btnReadMore_service group-hover/btn:text-green-foreground transition-all duration-500"
                               >Read More</span
                             >
                             <span
@@ -1219,12 +1247,12 @@
                         class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card"
                       >
                         <i
-                          class="icon-teddy-bear text-[65px] text-green-foreground"
+                          class="service__icon fa-solid fa-user-astronaut text-[65px] text-green-foreground"
                         ></i>
                         <h4 class="lg:max-w-[176px] mt-5">
                           <a
                             href="service-details.html"
-                            class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500"
+                            class="title_swiper lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500"
                             >Stars Preschool our design</a
                           >
                         </h4>
@@ -1239,7 +1267,7 @@
                             class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
                           >
                             <span
-                              class="group-hover/btn:text-green-foreground transition-all duration-500"
+                              class="btnReadMore_service group-hover/btn:text-green-foreground transition-all duration-500"
                               >Read More</span
                             >
                             <span
@@ -1265,12 +1293,12 @@
                         class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card"
                       >
                         <i
-                          class="icon-mat text-[65px] text-green-foreground"
+                          class="service__icon fa-solid fa-hat-cowboy text-[65px] text-green-foreground"
                         ></i>
                         <h4 class="lg:max-w-[176px] mt-5">
                           <a
                             href="service-details.html"
-                            class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500"
+                            class="title_swiper lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500"
                             >Stars Preschool our design</a
                           >
                         </h4>
@@ -1285,7 +1313,7 @@
                             class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
                           >
                             <span
-                              class="group-hover/btn:text-green-foreground transition-all duration-500"
+                              class="btnReadMore_service group-hover/btn:text-green-foreground transition-all duration-500"
                               >Read More</span
                             >
                             <span
@@ -1311,12 +1339,12 @@
                         class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card"
                       >
                         <i
-                          class="icon-mat text-[65px] text-green-foreground"
+                          class="service__icon fa-solid fa-graduation-cap text-[65px] text-green-foreground"
                         ></i>
                         <h4 class="lg:max-w-[176px] mt-5">
                           <a
                             href="service-details.html"
-                            class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500"
+                            class="title_swiper lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500"
                             >Learning School heres us</a
                           >
                         </h4>
@@ -1328,20 +1356,20 @@
                           </p>
                           <a
                             href="service-details.html"
-                            class="btnReadMore__service inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn"
+                            class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn relative overflow-hidden"
                           >
                             <span
-                              class="group-hover/btn:text-green-foreground transition-all duration-500"
+                              class="btnReadMore_service relative z-10 transition-all duration-500"
                               >Read More</span
                             >
                             <span
-                              class="group-hover/btn:ml-1 text-green-foreground transition-all duration-500"
+                              class="relative z-10 text-green-foreground transition-all duration-500"
                             >
                               <i
                                 class="fa-solid fa-arrow-right"
                                 aria-hidden="true"
-                              ></i
-                            ></span>
+                              ></i>
+                            </span>
                           </a>
                         </div>
                       </div>
@@ -1366,35 +1394,20 @@
       </div>
       <!-- shap end -->
     </section>
-
-    <br />
-    <section
-      class="bg-[linear-gradient(180deg,_rgba(238,255,200,0.00)_0%,_#E9FFB6_100%)] overflow-x-hidden"
-    >
-      <div class="bg-bottom bg-no-repeat bg-contain bg-newsletter-banner">
-        <div class="container">
-          <div
-            class="flex lg:flex-row flex-col lg:items-center justify-between gap-7.5"
-          >
-            <div
-              class="max-w-[598px] w-full order-1 lg:order-0 animate-left-right"
-            >
-              <div
-                class="bg-[url('/assets/images/shapes/egg-shap.png')] bg-no-repeat bg-bottom bg-contain"
-              >
-                <img
-                  src="./images/student.png"
-                  alt="student-img"
-                  class="mx-auto"
-                />
-              </div>
-            </div>
-            <div class="lg:max-w-[530px] order-0 lg:order-1">
+    <!-- Faq -->
+    <section id="faq" class="lg:pb-15 pb-10 faq-section">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
+          <div class="max-w-[528px] lg:max-w-full mx-auto">
+            <img src="./images/banner-1.png" alt="child with laptop" />
+          </div>
+          <div>
+            <div class="lg:max-w-[520px] pb-10">
               <p
-                class="font-bubblegum-sans text-[19px] text-muted-foreground wow fadeInUp"
+                class="txtAbout text-secondary-foreground font-bubblegum-sans text-[19px] wow animate__animated animated__fadeInUp"
                 style="visibility: visible; animation-name: fadeInUp"
               >
-                Get Connected
+                Some Faq
               </p>
               <h2
                 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
@@ -1405,211 +1418,719 @@
                   animation-name: fadeInUp;
                 "
               >
-                Education That Sparks Imaginat Nurturing Curiosity Inspire
+                Empowering Children Through Education Playful Mind
               </h2>
-              <div class="relative lg:mt-10 mt-5">
-                <input
-                  type="text"
-                  placeholder="Enter Your Email"
-                  class="rounded-[10px] border border-black pl-6 lg:py-7 py-4 max-h-20 w-full outline-none"
-                />
-                <button
-                  class="bg-primary text-cream-foreground rounded-[10px] absolute right-[10px] top-1/2 -translate-y-1/2 btn"
+            </div>
+            <!-- according start -->
+            <div
+              class="rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[15px] according-item active-accor"
+              data-open="true"
+            >
+              <div
+                class="flex justify-between items-center cursor-pointer according-btn"
+              >
+                <h4
+                  class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
                 >
-                  <span>Submit</span>
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </button>
+                  Why do we have to go to school?
+                </h4>
+                <span
+                  class="bg-primary rounded-md flex justify-center items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon"
+                >
+                  <i
+                    class="fa-solid fa-plus text-cream-foreground plus-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="fa-solid fa-minus text-cream-foreground minus-icon hidden"
+                    aria-hidden="false"
+                  ></i>
+                </span>
+              </div>
+              <div
+                class="max-h-0 opacity-0 invisible transition-all duration-500 accordion-details"
+              >
+                <div class="pt-5">
+                  <p class="font-normal text-gray-500">
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
               </div>
             </div>
+            <!-- according end -->
+            <!-- according start -->
+            <div
+              class="rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[15px] mt-7.5 according-item active-accor"
+              data-open="false"
+            >
+              <div
+                class="flex justify-between items-center cursor-pointer according-btn"
+              >
+                <h4
+                  class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
+                >
+                  Why do we have to go to school?
+                </h4>
+                <span
+                  class="bg-primary rounded-md flex justify-center items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon"
+                >
+                  <i
+                    class="fa-solid fa-plus text-cream-foreground plus-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="fa-solid fa-minus text-cream-foreground minus-icon hidden"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+              </div>
+              <div
+                class="max-h-0 opacity-0 invisible transition-all duration-500 accordion-details"
+              >
+                <div class="pt-5">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- according end -->
+            <!-- according start -->
+            <div
+              class="rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[15px] mt-7.5 according-item active-accor"
+              data-open="false"
+            >
+              <div
+                class="flex justify-between items-center cursor-pointer according-btn"
+              >
+                <h4
+                  class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
+                >
+                  Why do we have to go to school?
+                </h4>
+                <span
+                  class="bg-primary rounded-md flex justify-center items-center px-[11px] py-2.5 lg:w-10 w-8 lg:h-10 h-8 transition-all duration-500 icon"
+                >
+                  <i
+                    class="fa-solid fa-plus text-cream-foreground plus-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="fa-solid fa-minus text-cream-foreground minus-icon hidden"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+              </div>
+              <div
+                class="max-h-0 opacity-0 invisible transition-all duration-500 accordion-details"
+              >
+                <div class="pt-5">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- according end -->
           </div>
         </div>
       </div>
     </section>
-    <!-- footer -->
-    <footer class="pt-[70px] relative">
-      <div class="container__footer">
-        <div
-          class="grid lg:grid-cols-[370px_auto_auto] sm:grid-cols-2 grid-cols-1 justify-between gap-7.5"
-        >
-          <!-- compnay info start -->
-          <div
-            class="wow animate__animated animate_fadeInUp"
-            data-wow-delay=".3s"
-            style="
-              visibility: visible;
-              animation-delay: 0.3s;
-              animation-name: fadeInUp;
-            "
-          >
-            <a href class="flex items-center gap-1">
-              <img src="./images/logo.png" alt="img" />
-              <span class="font-bold text-3xl">Ascent</span>
-            </a>
-            <p class="pt-4">
-              Yes, there are many notable ma corporate the a od businesses
-              Informati worldwide
-            </p>
-            <ul class="flex items-center gap-5 pt-7.5">
-              <li>
-                <a
-                  href
-                  class="rounded-md w-9 h-9 flex items-center justify-center bg-warm1 hover:text-cream-foreground hover:bg-green transition-all duration-500 border border-"
-                  ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href
-                  class="rounded-md w-9 h-9 flex items-center justify-center bg-warm1 hover:text-cream-foreground hover:bg-green transition-all duration-500"
-                  ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href
-                  class="rounded-md w-9 h-9 flex items-center justify-center bg-warm1 hover:text-cream-foreground hover:bg-green transition-all duration-500"
-                  ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href
-                  class="rounded-md w-9 h-9 flex items-center justify-center bg-warm1 hover:text-cream-foreground hover:bg-green transition-all duration-500"
-                  ><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i
-                ></a>
-              </li>
-            </ul>
+<!--  -->
+
+    <br />
+    <section class="team-section">
+      <div class="container text-center">
+          <p class="subtitle">Meet Our Professional</p>
+          <h2 class="title">Joyful Journeys Childcare and the Of a Education</h2>
+          
+          <div class="team-grid">
+              <!-- Card start -->
+              <div class="team-card">
+                  <img src="./images/professonal1.png" alt="team-1" class="team-image">
+                  <h4><a href="#" class="name">Jane Cooper</a></h4>
+                  <p class="position">Marketing Coordinator</p>
+                  <ul class="social-links">
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                  </ul>
+              </div>
+              <!-- Card end -->
+    
+              <!-- Duplicate card for team members 2 and 3 -->
+              <div class="team-card">
+                  <img src="./images/professonal2.png" alt="team-2" class="team-image">
+                  <h4><a href="#" class="name">Jane Cooper</a></h4>
+                  <p class="position">Marketing Coordinator</p>
+                  <ul class="social-links">
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                  </ul>
+              </div>
+    
+              <div class="team-card">
+                  <img src="./images/professonal3.png" alt="team-3" class="team-image">
+                  <h4><a href="#" class="name">Jane Cooper</a></h4>
+                  <p class="position">Marketing Coordinator</p>
+                  <ul class="social-links">
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a></li>
+                      <li><a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                  </ul>
+              </div>
+              <!-- Card end -->
           </div>
-          <!-- compnay info end -->
-          <!-- pages link start -->
-          <div
-            class="wow animate_animated animate_fadeInUp"
-            data-wow-delay=".5s"
-            style="visibility: visible; animation-delay: 0.5s"
-          >
-            <h3 class="text-2xl font-semibold">Pages</h3>
-            <ul class="flex flex-col gap-[15px] pt-5">
-              <li>
-                <a
-                  href
-                  class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a
-                  href=""
-                  class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
-                  >Latest Service</a
-                >
-              </li>
-              <li>
-                <a
-                  href
-                  class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
-                  >Latest Blog And News</a
-                >
-              </li>
-              <li>
-                <a
-                  href
-                  class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
-                  >FAQ</a
-                >
-              </li>
-              <li>
-                <a
-                  href=""
-                  class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
-                  >Our Creative Team Member</a
-                >
-              </li>
-            </ul>
+      </div>
+    </section>
+    <!-- Team section end -->
+    
+        <!-- Student Age Section Start -->
+    <section class="lg:pt-15 lg:pb-15 pb-10 pt-10">
+      <div class="bg-warm lg:py-[120px] py-20 relative z-[1]">
+          <div class="container">
+              <div class="grid lg:grid-cols-[37%_auto] grid-cols-1 items-center xl:gap-20 gap-10">
+                  <!-- Left Side -->
+                  <div>
+                      <div class="lg:max-w-[460px]">
+                          <p class="text-secondary-foreground font-bubblegum-sans text-[19px] wow fadeInUp">Student knowledge</p>
+                          <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl leading-[110%] wow fadeInUp" data-wow-delay=".3s">Knowledge for All learn design Excellence for Everyone</h2>
+                      </div>
+                      <p class="pt-5 pb-7.5 wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipiscing elit platea  the osr of a proin mollis pretium facilisi in, ligula volutpat</p>
+                      <a href="#" class="btn-rounded-full__knowledge bg-destructive hover:border-destructive hover:text-destructive-foreground">Learn More</a>
+                  </div>
+                  <!-- Right Side -->
+                  <div class="relative flex justify-center flex-wrap sm:flex-nowrap lg:justify-between md:gap-7.5 sm:gap-4 gap-3">
+                      <div class="mt-[110px] flex flex-col items-end gap-3">
+                          <div class="bg-[#0A6375] rounded-[10px] py-7 lg:py-10 xl:py-20 px-5 lg:px-10 md:px-6 max-w-[190px]">
+                              <h5 class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[140%] text-center"><span>1-2</span> <span>Years</span></h5>
+                          </div>
+                          <div class="bg-primary rounded-[10px] py-7 lg:py-9 xl:py-[53px] px-5 lg:px-8 md:px-6 max-w-[190px]">
+                              <h5 class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center"><span>9-11</span> <span>Years</span></h5>
+                          </div>
+                      </div>
+                      <div class="flex flex-col gap-3">
+                          <div class="bg-secondary rounded-[10px] py-7 lg:py-9 xl:py-[53px] px-5 lg:px-8 md:px-6 max-w-[190px]">
+                              <h5 class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center"><span>3-5</span> <span>Years</span></h5>
+                          </div>
+                          <div class="bg-destructive rounded-[10px] py-7 lg:py-9 xl:py-[53px] px-5 lg:px-8 md:px-6 max-w-[190px]">
+                              <h5 class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center"><span>6-8</span> <span>Years</span></h5>
+                          </div>
+                          <div class="bg-green rounded-[10px] py-7 lg:py-9 xl:py-[53px] px-5 lg:px-8 md:px-6 max-w-[190px]">
+                              <h5 class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center"><span>16-18</span> <span>Years</span></h5>
+                          </div>
+                      </div>
+                      <div class="self-center">
+                          <div class="bg-primary rounded-[10px] py-7 lg:py-9 xl:py-[53px] px-5 lg:px-8 md:px-6 max-w-[190px]">
+                              <h5 class="font-nunito text-cream-foreground lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center"><span>12-15</span> <span>Years</span></h5>
+                          </div>
+                      </div>  
+                  </div>
+              </div>
+              <!-- Shape -->
+              <div class="absolute 2xl:left-15 left-0 bottom-0 z-[-1] xl:block hidden">
+                  <img src="./images/knowledge-lshpe.png" alt="tree">
+              </div>
+              <div class="absolute 2xl:top-[120px] lg:top-16 top-5 right-[67px] 2xl:w-auto lg:w-48 w-32 animate-left-right">
+                  <img src="./images/knowledge-animal.png" alt="animal">
+              </div>
           </div>
-          <!-- pages link end -->
-          <!-- contact link start -->
+      </div>
+    </section>
+    <!-- Student Age Section End -->
+    
+        <!-- Testimonial section start -->
+    <section class="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial">
+      <div class="container">
+          <div class="flex lg:flex-row flex-col justify-between lg:items-center gap-4 lg:pb-15 pb-10">
+              <div class="lg:max-w-[410px]">
+                  <p class="text-secondary-foreground font-bubblegum-sans text-[19px] wow fadeInUp">Clients Testimonial</p>
+                  <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl wow fadeInUp" data-wow-delay=".3s">Unlocking the Power of Wonderworks Child</h2>
+              </div>
+              <p class="lg:max-w-[410px]">Use receiving accounts a number of currencies and get paid like a local Use receivin accounts a number paid the most beautiful think.</p>
+             
+          </div>
+          <div class="image-container">
+            <img src="./images/portfolio-2.png" alt="Background Image" class="background-image">
+            <div class="overlay">
+              <div class="relative w-full h-full after:absolute after:left-0 after:top-0 after:max-w-[calc(100%-100px)] after:w-full after:h-full after:bg-testimonial-banner after:bg-cover after:bg-no-repeat after:z-[-1]">
+                <div class="py-10">
+                    <div class="swiper testimonial-swiper max-w-[630px] w-full ml-auto mr-0">
+                        <div class="swiper-wrapper">
+                            <!-- Reusable card component -->
+                            <div class="swiper-slide">
+                                <div class="lg:p-10 sm:p-8 py-8 sm:py-0">
+                                    <div class="bg-background border border-[#F2F2F2] lg:p-15 md:p-5 p-3 rounded-[10px] shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)]">
+                                        <div class="flex justify-between items-center relative z-10 lg:pb-7.5 pb-5">
+                                            <div class="flex items-center gap-5">
+                                                <img src="./images/user-1.png" alt="user">
+                                                <div>
+                                                    <h5 class="md:text-2xl text-xl font-semibold">Shakib Al Hasan</h5>
+                                                    <p>Marketing Manager</p>
+                                                </div>
+                                            </div>
+                                            <img src="./images/quotation.png" alt="quotation" class="absolute right-0 z-[-1] lg:w-auto w-9">
+                                        </div>
+                                        <p>Their product exceeded my expectations. The quality and attention to detail are outstanding.</p>
+                                        <ul class="flex items-center gap-1 lg:pt-10 pt-5">
+                                            <li><i class="fa-solid fa-star text-primary-foreground text-xl"></i></li>
+                                            <li><i class="fa-solid fa-star text-primary-foreground text-xl"></i></li>
+                                            <li><i class="fa-solid fa-star text-primary-foreground text-xl"></i></li>
+                                            <li><i class="fa-solid fa-star text-primary-foreground text-xl"></i></li>
+                                            <li><i class="fa-regular fa-star text-muted-foreground opacity-30 text-xl"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Duplicate card for additional testimonials -->
+                            <div class="swiper-slide"> <!-- Card 2, similar to the first one --> </div>
+                            <div class="swiper-slide"> <!-- Card 3, similar to the first one --> </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="testimonial-pagination"></div> -->
+            </div>
+            </div>
+        </div>
+           
+         
+      </div>
+    </section>
+    <!-- Testimonial section end -->
+    
+        <!-- Blog Section Start -->
+        <section class="lg:pt-15 pt-10">
           <div
-            class="wow fadeInUp"
-            data-wow-delay=".5s"
-            style="
-              visibility: visible;
-              animation-delay: 0.5s;
-              animation-name: fadeInUp;
-            "
+            class="lg:py-[120px] py-20 bg-[linear-gradient(180deg,_#FFF0E5_0%,_rgba(255,_240,_229,_0.00)_100%)]"
           >
-            <h3 class="text-2xl font-semibold">Contact</h3>
-            <ul class="flex flex-col gap-[15px] pt-5">
-              <li>
-                <p class="text-[#686868] flex items-center gap-4">
-                  <span
-                    class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"
-                    ><i class="fa-solid fa-location-dot" aria-hidden="true"></i
-                  ></span>
-                  <span class="max-w-[168px]"
-                    >1179 KFC Road, Lisbon, Portugal</span
+            <div class="container">
+              <!-- Section Header -->
+              <div class="flex justify-between items-center lg:pb-15 pb-10">
+                <div class="lg:max-w-[630px]">
+                  <p
+                    class="text-secondary-foreground__blog__new font-bubblegum-sans text-[19px] wow fadeInUp"
                   >
-                </p>
-              </li>
-              <li>
-                <p class="text-[#686868] flex items-center gap-4">
-                  <span
-                    class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"
-                    ><i class="fa-solid fa-envelope" aria-hidden="true"></i
-                  ></span>
-                  <a href="">Sakib23@gmail.com</a>
-                </p>
-              </li>
-              <li>
-                <p class="text-[#686868] flex items-center gap-4">
-                  <span
-                    class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"
-                    ><i class="fa-solid fa-phone" aria-hidden="true"></i
-                  ></span>
-                  <a href="">012547892354</a>
-                </p>
-              </li>
-            </ul>
+                    Latest Blog And News
+                  </p>
+                  <h2
+                    class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    Wonderworks Child Development Center Discovery Kids Preschool
+                  </h2>
+                </div>
+              </div>
+              <!-- Blog Cards -->
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-7.5">
+                <div class="flex flex-col gap-7.5">
+                  <!-- Blog Card -->
+                  <div
+                    class="bg-background__blog__new rounded-[10px] p-2.5 flex sm:flex-row flex-col sm:items-center gap-5 shadow-4xl wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <img
+                      src="./images/blog-1.png"
+                      alt="Blog Image 1"
+                      class="w-full sm:max-w-[210px] h-full object-cover rounded-md"
+                    />
+                    <div>
+                      <div class="flex items-center gap-5 pb-3">
+                        <p>
+                          <i
+                            class="fa-regular fa-calendar-days text-secondary-foreground__blog__new mr-1"
+                          ></i
+                          ><small>October 19, 2023</small>
+                        </p>
+                        <p>
+                          <i
+                            class="fa-regular fa-user text-secondary-foreground__blog__new mr-1"
+                          ></i
+                          ><small>By admin</small>
+                        </p>
+                      </div>
+                      <h3 class="lg:max-w-[370px]">
+                        <a
+                          href=""
+                          class="text-hover__blognews md:text-2xl text-xl font-semibold hover:text-hover transition-all duration-500"
+                          >Empowering Children Through Education</a
+                        >
+                      </h3>
+                      <a
+                        href=""
+                        class="inline-flex items-center gap-2.5 mt-4 group/btn"
+                      >
+                        <span
+                          class="group-hover/btn:text-secondary-foreground transition-all duration-500"
+                          >Read More</span
+                        >
+                        <span
+                          class="group-hover/btn:ml-1 group-hover/btn:text-secondary-foreground transition-all duration-500"
+                          ><i class="fa-solid fa-arrow-right"></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Repeat Blog Card -->
+                  <div
+                    class="bg-background__blog__new rounded-[10px] p-2.5 flex sm:flex-row flex-col sm:items-center gap-5 shadow-4xl wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <img
+                      src="./images/blog-2.png"
+                      alt="Blog Image 2"
+                      class="w-full sm:max-w-[210px] h-full object-cover rounded-md"
+                    />
+                    <div>
+                      <div class="flex items-center gap-5 pb-3">
+                        <p>
+                          <i
+                            class="fa-regular fa-calendar-days text-secondary-foreground__blog__new mr-1"
+                          ></i
+                          ><small>October 19, 2023</small>
+                        </p>
+                        <p>
+                          <i
+                            class="fa-regular fa-user text-secondary-foreground__blog__new mr-1"
+                          ></i
+                          ><small>By admin</small>
+                        </p>
+                      </div>
+                      <h3 class="lg:max-w-[370px]">
+                        <a
+                          href=""
+                          class="text-hover__blognews md:text-2xl text-xl font-semibold .text-hover transition-all duration-500"
+                          >Empowering Children Through Education</a
+                        >
+                      </h3>
+                      <a
+                        href=""
+                        class="inline-flex items-center gap-2.5 mt-4 group/btn"
+                      >
+                        <span
+                          class="group-hover/btn:text-secondary-foreground__blog__new transition-all duration-500"
+                          >Read More</span
+                        >
+                        <span
+                          class="group-hover/btn:ml-1 group-hover/btn:text-secondary-foreground__blog__new transition-all duration-500"
+                          ><i class="fa-solid fa-arrow-right"></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class=" bg-background__blog__new rounded-[10px] flex flex-col items-start gap-5 shadow-4xl h-full wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <img
+                      src="./images/blog-3.png"
+                      alt="Blog Image 3"
+                      class="w-full"
+                    />
+                    <div class="px-10 pb-10">
+                      <div class="flex items-center gap-5 pb-3">
+                        <p>
+                          <i
+                            class="fa-regular fa-calendar-days text-secondary-foreground__blog__new mr-1"
+                          ></i
+                          ><small>October 19, 2023</small>
+                        </p>
+                        <p>
+                          <i
+                            class="fa-regular fa-user text-secondary-foreground__blog__new mr-1"
+                          ></i
+                          ><small>By admin</small>
+                        </p>
+                      </div>
+                      <h3>
+                        <a
+                          href=""
+                          class="text-hover__blognews md:text-2xl text-xl font-semibold text-hover:hovertransition-all duration-500"
+                          >Empowering Children Through Education</a
+                        >
+                      </h3>
+                      <a
+                        href=""
+                        class="inline-flex items-center gap-2.5 mt-4 group/btn"
+                      >
+                        <span
+                          class="group-hover/btn:text-secondary-foreground transition-all duration-500"
+                          >Read More</span
+                        >
+                        <span
+                          class="group-hover/btn:ml-1 group-hover/btn:text-secondary-foreground__blog__new transition-all duration-500"
+                          ><i class="fa-solid fa-arrow-right"></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- contact link end -->
-        </div>
-        <div class="pt-[75px] overflow-x-hidden">
+        </section>
+        <!-- Blog Section End -->
+        <!-- newsletter section start -->
+        <section
+          class="bg-[linear-gradient(180deg,_rgba(238,255,200,0.00)_0%,_#E9FFB6_100%)] overflow-x-hidden"
+        >
+          <div class="bg-bottom bg-no-repeat bg-contain bg-newsletter-banner">
+            <div class="container">
+              <div
+                class="flex lg:flex-row flex-col lg:items-center justify-between gap-7.5"
+              >
+                <div
+                  class="max-w-[598px] w-full order-1 lg:order-0 animate-left-right"
+                >
+                  <div
+                    class="bg-[url('/assets/images/shapes/egg-shap.png')] bg-no-repeat bg-bottom bg-contain"
+                  >
+                    <img
+                      src="./images/student.png"
+                      alt="student-img"
+                      class="mx-auto"
+                    />
+                  </div>
+                </div>
+                <div class="lg:max-w-[530px] order-0 lg:order-1">
+                  <p
+                    class="font-bubblegum-sans text-[19px] text-muted-foreground wow fadeInUp"
+                    style="visibility: visible; animation-name: fadeInUp"
+                  >
+                    Get Connected
+                  </p>
+                  <h2
+                    class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
+                    data-wow-delay=".3s"
+                    style="
+                      visibility: visible;
+                      animation-delay: 0.3s;
+                      animation-name: fadeInUp;
+                    "
+                  >
+                    Education That Sparks Imaginat Nurturing Curiosity Inspire
+                  </h2>
+                  <div class="relative lg:mt-10 mt-5">
+                    <input
+                      type="text"
+                      placeholder="Enter Your Email"
+                      class="rounded-[10px] border border-black pl-6 lg:py-7 py-4 max-h-20 w-full outline-none"
+                    />
+                    <button
+                      class="bg-primary text-cream-foreground rounded-[10px] absolute right-[10px] top-1/2 -translate-y-1/2 btn"
+                    >
+                      <span>Submit</span>
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- footer -->
+        <footer class="pt-[70px] relative">
+          <div class="container">
+            <div
+              class="grid lg:grid-cols-[370px_auto_auto] sm:grid-cols-2 grid-cols-1 justify-between gap-7.5"
+            >
+              <!-- compnay info start -->
+              <div
+                class="wow fadeInUp"
+                data-wow-delay=".3s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.3s;
+                  animation-name: fadeInUp;
+                "
+              >
+                <a href class="flex items-center gap-1">
+                  <img src="./images/logo.png" alt="img" />
+                  <span class="font-bold text-3xl">Ascent</span>
+                </a>
+                <p class="pt-4">
+                  Yes, there are many notable ma corporate the a od businesses
+                  Informati worldwide
+                </p>
+                <ul class="flex items-center gap-5 pt-7.5">
+                  <li>
+                    <a
+                      href
+                      class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-green transition-all duration-500 border border-"
+                      ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href
+                      class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-green transition-all duration-500"
+                      ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href
+                      class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-green transition-all duration-500"
+                      ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href
+                      class="rounded-md w-9 h-9 flex items-center justify-center bg-warm hover:text-cream-foreground hover:bg-green transition-all duration-500"
+                      ><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- compnay info end -->
+              <!-- pages link start -->
+              <div
+                class="wow fadeInUp"
+                data-wow-delay=".5s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.5s;
+                  animation-name: fadeInUp;
+                "
+              >
+                <h3 class="text-2xl font-semibold">Pages</h3>
+                <ul class="flex flex-col gap-[15px] pt-5">
+                  <li>
+                    <a
+                      href
+                      class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
+                      >Latest Service</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href
+                      class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
+                      >Latest Blog And News</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href
+                      class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground"
+                      >Our Creative Team Member</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- pages link end -->
+              <!-- contact link start -->
+              <div
+                class="wow fadeInUp"
+                data-wow-delay=".5s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.5s;
+                  animation-name: fadeInUp;
+                "
+              >
+                <h3 class="text-2xl font-semibold">Contact</h3>
+                <ul class="flex flex-col gap-[15px] pt-5">
+                  <li>
+                    <p class="text-[#686868] flex items-center gap-4">
+                      <span
+                        class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"
+                        ><i class="fa-solid fa-location-dot" aria-hidden="true"></i
+                      ></span>
+                      <span class="max-w-[168px]"
+                        >1179 KFC Road, Lisbon, Portugal</span
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-[#686868] flex items-center gap-4">
+                      <span
+                        class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"
+                        ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+                      ></span>
+                      <a href="">Sakib23@gmail.com</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-[#686868] flex items-center gap-4">
+                      <span
+                        class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"
+                        ><i class="fa-solid fa-phone" aria-hidden="true"></i
+                      ></span>
+                      <a href="">012547892354</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- contact link end -->
+            </div>
+            <div class="pt-[75px] overflow-x-hidden">
+              <div
+                class="flex lg:flex-row flex-col justify-between lg:items-center pt-7.5 pb-8 border-t border-t-white border-opacity-20"
+              >
+                <p
+                  class="wow fadeInLeft"
+                  data-wow-delay=".3s"
+                  style="
+                    visibility: visible;
+                    animation-delay: 0.3s;
+                    animation-name: fadeInLeft;
+                  "
+                >
+                  © <a href="">Yoursitename</a> 2024 | All Rights Reserved
+                </p>
+                <ul
+                  class="flex items-center gap-7.5 wow fadeInRight contactEnd"
+                  data-wow-delay=".3s"
+                  style="
+                    visibility: visible;
+                    animation-delay: 0.3s;
+                    animation-name: fadeInRight;
+                  "
+                >
+                  <li><a href="">Trams &amp; Condition</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div
-            class="flex lg:flex-row flex-col justify-between lg:items-center pt-7.5 pb-8 border-t border-t-white border-opacity-20"
+            id="scroll-up "
+            class="cd-top text-replace js-cd-top absolute bottom-20 xl:left-[90%] left-1/2 -translate-x-1/2 w-12.5 h-12.5 rounded-full bg-primary text-cream-foreground flex justify-center items-center border-[3px] border-white cursor-pointer"
           >
-            <p
-              class="wow fadeInLeft"
-              data-wow-delay=".3s"
-              style="
-                visibility: visible;
-                animation-delay: 0.3s;
-                animation-name: fadeInLeft;
-              "
-            >
-              © <a href="">Yoursitename</a> 2024 | All Rights Reserved
-            </p>
-            <ul
-              class="flex items-center gap-7.5 wow fadeInRight contactEnd"
-              data-wow-delay=".3s"
-              style="
-                visibility: visible;
-                animation-delay: 0.3s;
-                animation-name: fadeInRight;
-              "
-            >
-              <li><a href="">Trams &amp; Condition</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Contact Us</a></li>
-            </ul>
+            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
           </div>
-        </div>
-      </div>
-      <div
-        id="scroll-up "
-        class="cd-top text-replace js-cd-top absolute bottom-20 xl:left-[90%] left-1/2 -translate-x-1/2 w-12.5 h-12.5 rounded-full bg-primary text-cream-foreground flex justify-center items-center border-[3px] border-white cursor-pointer"
-      >
-        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-      </div>
-    </footer>
+        </footer>
 
     <br />
 
@@ -1659,6 +2180,80 @@
         });
       });
     </script>
+    <!-- Thêm JS cho Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".service-swiper", {
+          slidesPerView: 3, // số lượng slide hiển thị
+          spaceBetween: 30, // khoảng cách giữa các slide
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+    </script>
+    <!--  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordions = document.querySelectorAll(".according-btn");
+
+        accordions.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const accordionItem = btn.parentElement;
+            const isOpen = accordionItem.getAttribute("data-open") === "true";
+
+            // Đóng tất cả các accordion khác (tuỳ chọn nếu bạn muốn chỉ mở một accordion cùng lúc)
+            document.querySelectorAll(".according-item").forEach((item) => {
+              if (item !== accordionItem) {
+                item.setAttribute("data-open", "false");
+                item.querySelector(".plus-icon").classList.remove("hidden");
+                item.querySelector(".minus-icon").classList.add("hidden");
+              }
+            });
+
+            // Chuyển đổi trạng thái mở/đóng của accordion hiện tại
+            accordionItem.setAttribute("data-open", !isOpen);
+
+            // Chuyển đổi icon cộng/trừ
+            const plusIcon = btn.querySelector(".plus-icon");
+            const minusIcon = btn.querySelector(".minus-icon");
+
+            if (!isOpen) {
+              plusIcon.classList.add("hidden");
+              minusIcon.classList.remove("hidden");
+            } else {
+              plusIcon.classList.remove("hidden");
+              minusIcon.classList.add("hidden");
+            }
+          });
+        });
+      });
+    </script>
+    <!--  -->
+    <script>
+      function toggleAccordion(element) {
+        const accordionContent = element.nextElementSibling;
+        const isOpen = accordionContent.getAttribute("data-open") === "true";
+
+        // Đổi trạng thái mở/đóng
+        accordionContent.setAttribute("data-open", !isOpen);
+
+        // Đổi trạng thái icon dấu cộng và trừ
+        const plusIcon = element.querySelector(".plus-icon");
+        const minusIcon = element.querySelector(".minus-icon");
+
+        if (!isOpen) {
+          plusIcon.classList.add("hidden");
+          minusIcon.classList.remove("hidden");
+        } else {
+          plusIcon.classList.remove("hidden");
+          minusIcon.classList.add("hidden");
+        }
+      }
+    </script>
+    <!--  -->
     <script src="./libs/backtotop/util.js"></script>
     <script src="./libs/backtotop/main.js"></script>
   </body>
