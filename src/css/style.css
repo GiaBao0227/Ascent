@@ -1,34 +1,405 @@
-
 .pt-\[70px\] {
     padding-top: 70px;
 }
-.container{
+
+.container {
     margin-left: 40px;
 }
+
 .pt-7\.5 {
     padding-top: 30px;
 }
+
 .bg-warm {
     background-color: #FFF0E4;
 
 }
 
-.bg-warm:hover {
-    background-color: green;
-    
-}
+
+
 .text-green-foreground {
     color: #80C459;
 }
+
 .bg-primary {
     background-color: #F7941E;
     width: 50px;
     height: 50px;
-    
+
 }
+
 .text-cream-foreground {
     color: #FFFFFF;
 }
-.contactEnd li{
+
+.contactEnd li {
     margin-left: 30px;
+}
+
+.bg-newsletter-banner {
+    background-image: url(url../images/download);
+}
+
+.bg-bottom {
+    background-position: bottom;
+}
+
+.bg-contain {
+    background-size: contain;
+}
+
+.blog__new__content {
+    background-color: #FFFAF6;
+}
+
+.bg-background__blog__new {
+    background-color: #FFFFFF;
+    border: 0.1px solid #ffffff;
+    /* Đường viền dày màu đen */
+    padding: 2px;
+    /* Khoảng cách bên trong */
+    margin: 10px;
+    /* Khoảng cách bên ngoài */
+    border-radius: 10px;
+    /* Góc bo tròn */
+}
+
+.text-secondary-foreground__blog__new {
+    color: rgb(13, 173, 173);
+}
+
+.text-hover {
+    color: #000;
+    /* Màu chữ ban đầu */
+    transition: color 0.3s ease;
+    /* Hiệu ứng chuyển màu mượt mà */
+}
+
+.text-hover__blognews:hover {
+    color: rgb(13, 173, 173);
+    /* Màu chữ khi hover (đỏ) */
+
+}
+
+.image-container {
+    position: relative;
+    /* Thiết lập vị trí cho phần tử chứa */
+}
+
+.background-image {
+    width: 900px;
+    /* Hoặc chiều rộng cụ thể */
+    height: auto;
+    /* Giữ tỷ lệ cho hình ảnh */
+}
+
+.overlay {
+    position: absolute;
+    /* Đặt vị trí tuyệt đối */
+    top: 10%;
+    /* Đặt vị trí từ trên xuống */
+    left: 50%;
+    /* Đặt vị trí từ trái sang */
+    transform: auto;
+    /* Căn giữa nội dung */
+    background-color: rgb(255, 255, 255);
+    /* Nền với độ trong suốt */
+    padding: 0px;
+    /* Khoảng cách trong */
+    border-radius: 5px;
+    /* Đường viền bo góc */
+    z-index: 0;
+    /* Đảm bảo overlay nằm trên hình ảnh */
+}
+
+.bg-secondary {
+    background-color: #1CBBB4;
+}
+
+.bg-destructive {
+    background-color: #EE125B;
+}
+
+.bg-green {
+    background-color: #72BE48;
+}
+
+/* General styles */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Background color */
+.bg-warm {
+    background-color: #f8f3e4;
+    /* Màu nền */
+}
+
+/* Text styles */
+.text-secondary-foreground {
+    color: #6b6b6b;
+    /* Màu chữ phụ */
+}
+
+.text-cream-foreground {
+    color: #f9f9f9;
+    /* Màu chữ kem */
+}
+
+.font-bubblegum-sans {
+    font-family: 'Bubblegum Sans', cursive;
+    /* Phông chữ */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    gap: 10px;
+    /* Khoảng cách giữa các phần tử */
+}
+
+.lg\:grid-cols-\[37\%_auto\] {
+    grid-template-columns: 37% auto;
+    /* Cột cho màn hình lớn */
+}
+
+/* Button styles */
+.btn-rounded-full__knowledge{
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #d9534f;
+    /* Màu nền cho nút */
+    text-decoration: none;
+}
+
+/* Padding */
+.lg\:py-\[120px\] {
+    padding: 120px 0;
+    /* Padding cho màn hình lớn */
+}
+
+.py-20 {
+    padding: 20px 0;
+    /* Padding cho các màn hình khác */
+}
+
+/* Card styles */
+.rounded-\[10px\] {
+    border-radius: 10px;
+    /* Bo góc cho thẻ */
+}
+
+.max-w-\[190px\] {
+    max-width: 190px;
+    /* Chiều rộng tối đa cho thẻ */
+}
+
+/* Flexbox layout */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* Absolute positioning */
+.absolute {
+    position: absolute;
+}
+
+.z-\[-1\] {
+    z-index: -1;
+    /* Đặt phía sau các phần tử khác */
+}
+
+/* Animations */
+.animate-left-right {
+    animation: left-right 1s ease-in-out infinite;
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Hover effects */
+.hover\:border-destructive:hover {
+    border-color: #c9302c;
+    /* Hiệu ứng border khi hover */
+}
+
+.hover\:text-destructive-foreground:hover {
+    color: #c9302c;
+    /* Hiệu ứng màu chữ khi hover */
+}
+
+.team-section {
+    padding: 2.5rem 0;
+    /* Top and bottom padding */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 19px;
+    color: #6b6b6b;
+    /* Color for subtitle */
+}
+
+.title {
+    font-weight: bold;
+    font-size: 32px;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.875rem;
+    /* 30px */
+    padding-top: 2rem;
+    /* Spacing between title and cards */
+}
+
+.team-card {
+    background-color: #fff;
+    /* Background color */
+    border: 2px solid transparent;
+    border-radius: 50px 50px 10px 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: border-color 0.5s;
+}
+
+.team-card:hover {
+    border-color: #4caf50;
+    /* Change border color on hover */
+}
+
+.team-image {
+    border-radius: 50px 50px 10px 10px;
+    /* Image rounding */
+    transition: border-radius 0.5s;
+
+}
+
+.team-card:hover .team-image {
+    border-top-right-radius: 50px;
+    /* Bo góc trên bên phải */
+    border-top-left-radius: 10px;
+    /* Bo góc trên bên trái */
+    border-bottom-right-radius: 10px;
+    /* Bo góc dưới bên phải */
+    border-bottom-left-radius: 50px;
+    /* Bo góc dưới bên trái */
+}
+
+.duration-500 {
+    transition-duration: 500ms;
+    /* Thời gian chuyển tiếp 500ms */
+}
+
+.transition-all {
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* Chuyển tiếp cho tất cả thuộc tính */
+}
+
+.rounded-tr-10 {
+    border-top-right-radius: 10px;
+    /* Bo góc trên bên phải 10px */
+}
+
+.rounded-tl-50 {
+    border-top-left-radius: 50px;
+    /* Bo góc trên bên trái 50px */
+}
+
+.rounded-br-50 {
+    border-bottom-right-radius: 50px;
+    /* Bo góc dưới bên phải 50px */
+}
+
+.rounded-bl-10 {
+    border-bottom-left-radius: 10px;
+    /* Bo góc dưới bên trái 10px */
+}
+
+
+.name {
+    font-size: 24px;
+    /* Font size for name */
+    color: #333;
+}
+
+.position {
+    margin-top: 0.5rem;
+    /* Spacing above position */
+    color: #999;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* Space between icons */
+    margin-top: 1rem;
+    /* Space above social links */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 36px;
+    /* Icon size */
+    height: 36px;
+    /* Icon size */
+    background-color: #f8f3e4;
+    /* Background for social icons */
+    border-radius: 8px;
+    /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.social-icon:hover {
+    background-color: #d9534f;
+    /* Change background on hover */
+    color: #fff;
+    /* Change icon color on hover */
+}
+.btn-rounded-full__knowledge{
+   margin-bottom: 20px ;
 }
