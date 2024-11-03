@@ -1,791 +1,794 @@
 * {
-  margin: 0;
-  /*ngoài*/
-  padding: 0;
-  /*trong*/
-  font-size: 17px;
-  font-family: Nunito;
-  font-weight: bolder;
+    margin: 0;
+    /*ngoài*/
+    padding: 0;
+    /*trong*/
+    font-size: 17px;
+    font-family: Nunito;
+    font-weight: bolder;
 }
 
 .header__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #top-header .infor {
-  text-align: center;
-  margin-left: 85px;
+    text-align: center;
+    margin-left: 85px;
 }
 
 #top-header .contact {
-  text-align: center;
-  margin-right: -100px;
+    text-align: center;
+    margin-right: -100px;
 }
 
 #bottom__header .brand {
-  margin-left: 55px;
+    margin-left: 55px;
 }
 
 #bottom__header .nav__header {
-  margin-right: -100px;
+    margin-right: -100px;
 }
 
 .contact__icon {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 body.dark-mode {
-  background-color: #333;
-  color: #fff;
+    background-color: #333;
+    color: #fff;
 }
 
 body.dark-mode .social li a {
-  border-color: #ccc;
+    border-color: #ccc;
 }
 
 body.dark-mode .theme-toggle {
-  color: #fff;
-  background-color: #444;
+    color: #fff;
+    background-color: #444;
 }
 
 /*  */
 .infor ul li {
-  display: inline;
-  margin-left: 30px;
-  color: white;
+    display: inline;
+    margin-left: 30px;
+    color: white;
 }
 
 .contact ul li {
-  display: inline;
-  margin-left: 15px;
-  color: white;
+    display: inline;
+    margin-left: 15px;
+    color: white;
 
-  border: 10px;
+    border: 10px;
 }
 
 #exploring .exploring__logo {
-  margin-left: 85px;
+    margin-left: 85px;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
 }
 
 .nav {
-  margin-right: -70px;
+    margin-right: -70px;
 }
 
 .contact ul li:hover {
-  background-color: #f7941e;
-  border-radius: 10px;
+    background-color: #f7941e;
+    border-radius: 10px;
 }
 
 .social {
-  margin-left: 40px;
-  gap: 8px !important;
+    margin-left: 40px;
+    gap: 8px !important;
 }
 
 .social li a {
-  width: 25px;
-  /* Giảm kích thước icon */
-  height: 25px;
-  font-size: 2px;
-  /* Thu nhỏ kích thước icon */
+    width: 25px;
+    /* Giảm kích thước icon */
+    height: 25px;
+    font-size: 2px;
+    /* Thu nhỏ kích thước icon */
 }
 
 #top-header {
-  background-color: #ed145b;
+    background-color: #ed145b;
 }
 
-ul.hmenu > li > a:hover {
-  color: #f9a11e;
-  font-weight: bolder;
+ul.hmenu>li>a:hover {
+    color: #f9a11e;
+    font-weight: bolder;
 }
 
-ul.hmenu > li {
-  float: left;
+ul.hmenu>li {
+    float: left;
 
-  position: relative;
+    position: relative;
 }
 
-ul.hmenu > li:hover > .sub-menu {
-  display: block;
-  background-color: ivory;
+ul.hmenu>li:hover>.sub-menu {
+    display: block;
+    background-color: ivory;
 }
 
 ul.sub-menu {
-  list-style: none;
-  width: 200px;
-  position: absolute;
-  display: none;
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    display: none;
 }
 
-.sub-menu > li > a {
-  display: block;
-  line-height: 20px;
-  /* border-bottom: 1px dotted orangered; */
-  text-decoration: none;
-  /* font-variant: small-caps; */
-  /* padding-left: 45px; */
-  font-weight: bolder;
-  color: black;
-  background-color: ivory;
-  /* width: 200px; */
+.sub-menu>li>a {
+    display: block;
+    line-height: 20px;
+    /* border-bottom: 1px dotted orangered; */
+    text-decoration: none;
+    /* font-variant: small-caps; */
+    /* padding-left: 45px; */
+    font-weight: bolder;
+    color: black;
+    background-color: ivory;
+    /* width: 200px; */
 }
 
-.sub-menu > li > a:hover {
-  color: white;
-  font-weight: bolder;
-  background-color: #f7941e;
+.sub-menu>li>a:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #f7941e;
 }
 
 .btnQuote {
-  background: linear-gradient(90deg, #73be48 50%, #1bb6af 50%);
-  /* Đặt màu nền cơ bản */
-  background-size: 200%;
-  /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
-  background-position: right;
-  /* Bắt đầu từ bên phải */
-  padding: 20px 25px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-position 0.75s ease;
-  /* Hiệu ứng chuyển nền */
-  transform: translateX(5px);
+    background: linear-gradient(90deg, #73be48 50%, #1bb6af 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateX(5px);
 }
 
 .btnQuote:hover {
-  background-position: left;
-  /* Di chuyển nền sang trái khi hover */
+    background-position: left;
+    /* Di chuyển nền sang trái khi hover */
 }
 
 /*  */
 #exploring #exploring__title {
-  margin-left: 210px;
+    margin-left: 210px;
 }
 
 #exploring #exploring__banner {
-  margin-left: 90px;
+    margin-left: 90px;
 }
 
 #exploring .exploring__banner1 {
-  margin-right: -90px;
+    margin-right: -90px;
 }
 
 #exploring #exploring__logo {
-  margin-left: 100px;
+    margin-left: 100px;
 }
 
 .btnLearnMore {
-  background: linear-gradient(90deg, #1bb6af 50%, #73be48 50%);
-  /* Đặt màu nền cơ bản */
-  background-size: 200%;
-  /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
-  background-position: right;
-  /* Bắt đầu từ bên phải */
-  padding: 20px 25px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-position 0.75s ease;
-  /* Hiệu ứng chuyển nền */
-  transform: translateY(5px);
+    background: linear-gradient(90deg, #1bb6af 50%, #73be48 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateY(5px);
 }
 
 .btnLearnMore:hover {
-  background-position: left;
-  /* Di chuyển nền sang trái khi hover */
+    background-position: left;
+    /* Di chuyển nền sang trái khi hover */
 }
 
 .txtSchool {
-  color: #ed145b;
-  font-size: 4rem;
-  font-weight: bold;
+    color: #ed145b;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 .txtElementary {
-  font-size: 4rem;
-  font-weight: bold;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 .txtExploring {
-  font-size: 4rem;
-  font-weight: 300;
+    font-size: 4rem;
+    font-weight: 300;
 }
 
 .txtStarting {
-  color: #7b7978;
+    color: #7b7978;
 }
 
 #exploring {
-  background-color: #fff0e5;
+    background-color: #fff0e5;
 }
 
 @keyframes skew-animation {
-  0% {
-    transform: skew(0deg, 0deg) rotate(0deg);
-  }
+    0% {
+        transform: skew(0deg, 0deg) rotate(0deg);
+    }
 
-  25% {
-    transform: skew(5deg, 5deg) rotate(5deg);
-  }
+    25% {
+        transform: skew(5deg, 5deg) rotate(5deg);
+    }
 
-  50% {
-    transform: skew(-5deg, -5deg) rotate(-5deg);
-  }
+    50% {
+        transform: skew(-5deg, -5deg) rotate(-5deg);
+    }
 
-  75% {
-    transform: skew(5deg, -5deg) rotate(5deg);
-  }
+    75% {
+        transform: skew(5deg, -5deg) rotate(5deg);
+    }
 
-  100% {
-    transform: skew(0deg, 0deg) rotate(0deg);
-  }
+    100% {
+        transform: skew(0deg, 0deg) rotate(0deg);
+    }
 }
 
 .animate-skw {
-  animation: skew-animation 3s ease-in-out infinite;
-  /* Thời gian và tốc độ của hiệu ứng */
+    animation: skew-animation 3s ease-in-out infinite;
+    /* Thời gian và tốc độ của hiệu ứng */
 }
 
 @keyframes upDown {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
 
-  50% {
-    transform: translateY(-10px);
-    /* Điều chỉnh độ cao của chuyển động */
-  }
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Điều chỉnh độ cao của chuyển động */
+    }
 }
 
 #exploring__banner {
-  animation: upDown 3s ease-in-out infinite;
+    animation: upDown 3s ease-in-out infinite;
 }
 
 @keyframes leftRight {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
 
-  50% {
-    transform: translateX(20px);
-    /* Điều chỉnh khoảng cách di chuyển */
-  }
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+        /* Điều chỉnh khoảng cách di chuyển */
+    }
 }
 
 @keyframes moveLeftRight {
-  0% {
-    transform: translateX(0px);
-  }
+    0% {
+        transform: translateX(0px);
+    }
 
-  50% {
-    transform: translateX(20px);
-  }
+    50% {
+        transform: translateX(20px);
+    }
 }
 
 .animate-left-right {
-  animation: moveLeftRight 3s ease-in-out infinite;
+    animation: moveLeftRight 3s ease-in-out infinite;
 }
 
 .animate-left-right-2 {
-  animation: leftRight 3s ease-in-out infinite;
+    animation: leftRight 3s ease-in-out infinite;
 }
 
 #invest {
-  margin-left: 120px;
+    margin-left: 120px;
 }
 
 .txtTalks {
-  color: #f7941e;
+    color: #f7941e;
 }
 
 .txtLorem {
-  color: #767676;
-  font-weight: 100;
+    color: #767676;
+    font-weight: 100;
 }
 
 .btnQuote__invest {
-  background: linear-gradient(90deg, #1bb6af 50%, #ffffff 50%);
-  /* Đặt màu nền cơ bản */
-  background-size: 200%;
-  /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
-  background-position: right;
-  /* Bắt đầu từ bên phải */
-  padding: 20px 35px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-position 0.75s ease;
-  /* Hiệu ứng chuyển nền */
-  transform: translateY(5px);
+    background: linear-gradient(90deg, #1bb6af 50%, #ffffff 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateY(5px);
 }
 
 .btnQuote__invest:hover {
-  background-position: left;
-  color: white;
-  /* Di chuyển nền sang trái khi hover */
+    background-position: left;
+    color: white;
+    /* Di chuyển nền sang trái khi hover */
 }
 
 .icon__wrapper {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .icon__wrapper::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  /* Điều chỉnh khoảng cách so với icon */
-  left: -5px;
-  width: calc(100% + 10px);
-  /* Đường kính vòng tròn bên ngoài */
-  height: calc(100% + 10px);
-  border: 2px solid #f7941e;
-  /* Màu viền vòng tròn */
-  background-color: #f7941e;
-  border-radius: 50%;
-  z-index: -1;
-  /* Để vòng tròn ở phía sau icon */
+    content: "";
+    position: absolute;
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #f7941e;
+    /* Màu viền vòng tròn */
+    background-color: #f7941e;
+    border-radius: 50%;
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
 }
 
 .icon__wrapper1 {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .icon__wrapper1::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  /* Điều chỉnh khoảng cách so với icon */
-  left: -5px;
-  width: calc(100% + 10px);
-  /* Đường kính vòng tròn bên ngoài */
-  height: calc(100% + 10px);
-  border: 2px solid #ed145b;
-  /* Màu viền vòng tròn */
-  background-color: #ed145b;
-  border-radius: 50%;
-  z-index: -1;
-  /* Để vòng tròn ở phía sau icon */
+    content: "";
+    position: absolute;
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #ed145b;
+    /* Màu viền vòng tròn */
+    background-color: #ed145b;
+    border-radius: 50%;
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
 }
 
 .icon__wrapper2 {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .icon__wrapper2::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  /* Điều chỉnh khoảng cách so với icon */
-  left: -5px;
-  width: calc(100% + 10px);
-  /* Đường kính vòng tròn bên ngoài */
-  height: calc(100% + 10px);
-  border: 2px solid #73be48;
-  /* Màu viền vòng tròn */
-  background-color: #73be48;
-  border-radius: 50%;
-  z-index: -1;
-  /* Để vòng tròn ở phía sau icon */
+    content: "";
+    position: absolute;
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #73be48;
+    /* Màu viền vòng tròn */
+    background-color: #73be48;
+    border-radius: 50%;
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
 }
 
 .icon__wrapper3 {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .icon__wrapper3::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  /* Điều chỉnh khoảng cách so với icon */
-  left: -5px;
-  width: calc(100% + 10px);
-  /* Đường kính vòng tròn bên ngoài */
-  height: calc(100% + 10px);
-  border: 2px solid #1cbbb4;
-  /* Màu viền vòng tròn */
-  background-color: #1cbbb4;
-  border-radius: 50%;
-  z-index: -1;
-  /* Để vòng tròn ở phía sau icon */
+    content: "";
+    position: absolute;
+    top: -5px;
+    /* Điều chỉnh khoảng cách so với icon */
+    left: -5px;
+    width: calc(100% + 10px);
+    /* Đường kính vòng tròn bên ngoài */
+    height: calc(100% + 10px);
+    border: 2px solid #1cbbb4;
+    /* Màu viền vòng tròn */
+    background-color: #1cbbb4;
+    border-radius: 50%;
+    z-index: -1;
+    /* Để vòng tròn ở phía sau icon */
 }
 
 .invest__left .wow {
-  visibility: hidden;
-  /* Đảm bảo rằng các phần tử sẽ chỉ hiện khi được kích hoạt bởi Wow.js */
+    visibility: hidden;
+    /* Đảm bảo rằng các phần tử sẽ chỉ hiện khi được kích hoạt bởi Wow.js */
 }
 
 .invest__item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* Hai cột có chiều rộng bằng nhau */
-  grid-template-rows: auto;
-  /* Đặt chiều cao tự động theo nội dung */
-  gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Hai cột có chiều rộng bằng nhau */
+    grid-template-rows: auto;
+    /* Đặt chiều cao tự động theo nội dung */
+    gap: 30px;
 }
 
 /*  */
 #about {
-  margin-left: 120px;
+    margin-left: 120px;
 }
 
 .txtAcademy {
-  background-color: #fff0e5;
+    background-color: #fff0e5;
 }
 
 .txtLadder {
-  box-shadow: 0px 4.8px 24.4px rgba(19, 16, 34, 0.1);
+    box-shadow: 0px 4.8px 24.4px rgba(19, 16, 34, 0.1);
 }
 
 .txt10 {
-  color: #1cbbb4 !important;
-  font-weight: 700 !important;
+    color: #1cbbb4 !important;
+    font-weight: 700 !important;
 }
 
 .txtLadder1 {
-  color: #68688b;
+    color: #68688b;
 }
 
 .txtAbout {
-  color: #2cbfb9;
+    color: #2cbfb9;
 }
 
 /*  */
 #educational {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 #educational__programs {
-  margin-left: 230px;
+    margin-left: 230px;
 }
 
 /* Làm mờ hình ảnh pencil-rocket */
 .image__container {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .main__image {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 /* CSS cho phần tử chính */
 .educational_grid {
-  background-color: white;
-  transition: all 0.5s;
-  margin-bottom: 20px;
+    background-color: white;
+    transition: all 0.5s;
+    margin-bottom: 20px;
 }
 
 /* Hiệu ứng hover cho toàn bộ khung */
 .educational_grid:hover {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  border-color: transparent;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
 }
 
 /* Hiệu ứng hover cho tiêu đề (txtTitle) */
 .educational_grid:hover .txtTitle {
-  color: #73be48;
+    color: #73be48;
 }
 
 .educational__content {
-  margin-left: 120px;
+    margin-left: 120px;
 }
 
 /* Hiệu ứng hover cho icon */
 .educational__icon {
-  color: #73be48;
-  transition: background-color 0.5s, color 0.5s;
+    color: #73be48;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .educational_grid:hover .educational__icon {
-  background-color: #73be48;
-  color: #fff;
+    background-color: #73be48;
+    color: #fff;
 }
 
 /* Hiệu ứng hover cho nút Read More */
 .btnReadMore {
-  transition: color 0.5s;
+    transition: color 0.5s;
 }
 
 .btnReadMore:hover {
-  color: #7ec357;
-  cursor: pointer;
+    color: #7ec357;
+    cursor: pointer;
 }
 
 .educational__programs {
-  color: #73be48;
+    color: #73be48;
 }
 
 .swiper__content {
-  background-color: #fff0e5;
+    background-color: #fff0e5;
 }
 
 /*  */
 #portfolio {
-  margin-left: 100px;
+    margin-left: 100px;
 }
 
 .txtPortfolio {
-  color: #1cbbb4;
+    color: #1cbbb4;
 }
 
 /* Ẩn các radio buttons */
 input[type="radio"] {
-  display: none;
+    display: none;
 }
 
 /* Cài đặt chung cho các mục */
 .target-tab {
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 700;
-  border: 1px solid #f2f2f2;
-  border-radius: 10px;
-  color: #686868;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    color: #686868;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: inline-block;
 }
 
 /* Hiệu ứng hover cho tất cả các mục */
 .target-tab:hover {
-  background-color: #ffa500;
-  color: #fff;
+    background-color: #ffa500;
+    color: #fff;
 }
 
 /* Thiết lập cho mục "active" bằng cách sử dụng input radio */
-input[type="radio"]:checked + .target-tab {
-  background-color: #ffa500;
-  color: #fff;
-  border: 1px solid transparent;
+input[type="radio"]:checked+.target-tab {
+    background-color: #ffa500;
+    color: #fff;
+    border: 1px solid transparent;
 }
 
 /* Hiệu ứng cho mục active khi hover */
-input[type="radio"]:checked + .target-tab:hover {
-  background-color: #ff8800;
-  color: #fff;
+input[type="radio"]:checked+.target-tab:hover {
+    background-color: #ff8800;
+    color: #fff;
 }
 
 .education1 {
-  color: black;
+    color: black;
 }
 
 .portfolio__item {
-  margin: 10px 10px 10px 40px;
+    margin: 10px 10px 10px 40px;
 }
 
 .portfolio__item1:hover {
-  background-color: #f7941e;
-  color: #fff;
+    background-color: #f7941e;
+    color: #fff;
 }
 
 .circle__icon {
-  background-color: #fff !important;
-  /* Màu nền trắng */
-  color: #ff69b4 !important;
-  /* Màu chữ hồng */
-  transition: all 0.3s ease;
+    background-color: #fff !important;
+    /* Màu nền trắng */
+    color: #ff69b4 !important;
+    /* Màu chữ hồng */
+    transition: all 0.3s ease;
 }
 
 /*  */
 #service {
-  margin-left: 130px;
+    margin-left: 130px;
 }
 
 .btnReadMore__service {
-  background: linear-gradient(90deg, #1bb6af 50%, #ffffff 50%);
-  /* Đặt màu nền cơ bản */
-  background-size: 200%;
-  /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
-  background-position: right;
-  /* Bắt đầu từ bên phải */
-  padding: 20px 35px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-position 0.75s ease;
-  /* Hiệu ứng chuyển nền */
-  transform: translateY(5px);
+    background: linear-gradient(90deg, #1bb6af 50%, #ffffff 50%);
+    /* Đặt màu nền cơ bản */
+    background-size: 200%;
+    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
+    background-position: right;
+    /* Bắt đầu từ bên phải */
+    padding: 20px 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-position 0.75s ease;
+    /* Hiệu ứng chuyển nền */
+    transform: translateY(5px);
 }
 
 .btnReadMore__service:hover {
-  background-position: left;
-  color: white;
-  /* Di chuyển nền sang trái khi hover */
+    background-position: left;
+    color: white;
+    /* Di chuyển nền sang trái khi hover */
 }
 
 .image__service {
-  position: relative;
-  top: -180px;
-  display: block;
+    position: relative;
+    top: -180px;
+    display: block;
 }
 
 .service__icon {
-  font-size: small;
+    font-size: small;
 }
 
 .service-card {
-  /* Màu nền cho các slide */
-  transition: all 0.5s;
-  /* Thêm hiệu ứng chuyển đổi cho màu nền */
+    /* Màu nền cho các slide */
+    transition: all 0.5s;
+    /* Thêm hiệu ứng chuyển đổi cho màu nền */
 }
 
 .title_swiper:hover {
-  color: #73be48;
+    color: #73be48;
 }
 
 #service .image__service {
-  position: relative !important;
-  /* top: -10px !important;  */
+    position: relative !important;
+    /* top: -10px !important;  */
 }
 
 /* CSS cho phần tử chính */
 .swiper-slide:hover {
-  background-color: white;
-  transition: all 0.5s;
-  margin-bottom: 20px;
+    background-color: white;
+    transition: all 0.5s;
+    margin-bottom: 20px;
 }
 
 /* Hiệu ứng hover cho toàn bộ khung */
 .swiper-slide:hover {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  border-color: transparent;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
 }
 
 /* Hiệu ứng hover cho tiêu đề (txtTitle) */
 .swiper-slide:hover .title_swiper {
-  color: #73be48;
+    color: #73be48;
 }
 
 /* Hiệu ứng hover cho icon */
 .btnReadMore_service {
-  color: #73be48;
-  transition: background-color 0.5s, color 0.5s;
+    color: #73be48;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .swiper-slide:hover .service__icon {
-  color: #73be48;
+    color: #73be48;
 }
 
 #faq {
-  margin-left: 90px;
+    margin-left: 90px;
 }
 
 .pt-\[70px\] {
-  padding-top: 70px;
+    padding-top: 70px;
 }
 
 .container__footer {
-  margin-left: 40px;
+    margin-left: 40px;
 }
 
 .pt-7\.5 {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
 .bg-warm1 {
-  background-color: #fff0e4;
+    background-color: #fff0e4;
 }
 
 .bg-warm1:hover {
-  background-color: green;
+    background-color: green;
 }
 
 .text-green-foreground {
-  color: #80c459;
+    color: #80c459;
 }
 
 .bg-primary {
-  background-color: #f7941e;
-  width: 50px;
-  height: 50px;
+    background-color: #f7941e;
+    width: 50px;
+    height: 50px;
 }
 
 .text-cream-foreground {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .contactEnd li {
-  margin-left: 30px;
+    margin-left: 30px;
 }
 
 /* CSS cho icon dấu cộng và dấu trừ */
 .icon .minus-icon {
-  display: none;
+    display: none;
 }
 
 /* CSS cho màu nền của biểu tượng khi accordion mở */
 .according-item[data-open="true"] .icon {
-  background-color: #1cbbb4;
+    background-color: #1cbbb4;
 }
 
 .according-item[data-open="true"] .plus-icon {
-  display: none;
+    display: none;
 }
 
 .according-item[data-open="true"] .minus-icon {
-  display: inline;
+    display: inline;
 }
 
 /* CSS cho phần nội dung accordion */
 .accordion-details {
-  max-height: 0;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .according-item[data-open="true"] .accordion-details {
-  max-height: 300px; /* điều chỉnh chiều cao phù hợp */
-  opacity: 1;
-  visibility: visible;
+    max-height: 300px;
+    /* điều chỉnh chiều cao phù hợp */
+    opacity: 1;
+    visibility: visible;
 }
