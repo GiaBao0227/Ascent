@@ -639,13 +639,10 @@ input[type="radio"]:checked+.target-tab:hover {
 }
 
 .btnReadMore__service {
+    margin-top: 0px !important;
     background: linear-gradient(90deg, #1bb6af 50%, #ffffff 50%);
-    /* Đặt màu nền cơ bản */
     background-size: 200%;
-    /* Kích thước nền gấp đôi để tạo hiệu ứng chuyển động */
     background-position: right;
-    /* Bắt đầu từ bên phải */
-    padding: 20px 35px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -654,14 +651,21 @@ input[type="radio"]:checked+.target-tab:hover {
     cursor: pointer;
     text-decoration: none;
     transition: background-position 0.75s ease;
-    /* Hiệu ứng chuyển nền */
-    transform: translateY(5px);
+    transform: translateY(0);
 }
 
 .btnReadMore__service:hover {
     background-position: left;
     color: white;
     /* Di chuyển nền sang trái khi hover */
+}
+
+#service .btnReadMore__service {
+    margin-top: 0 !important;
+}
+
+#service .image__service {
+    position: relative !important;
 }
 
 .image__service {
